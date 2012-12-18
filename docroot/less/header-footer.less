@@ -1,0 +1,305 @@
+/*------------------------------------*\
+    $HEADER
+    $FOOTER
+\*------------------------------------*/
+
+#header, #footer {
+
+  .container {
+    position: relative;
+  }
+}
+
+#header {
+  background: @white;
+  color: @headerText;
+  font-size: 18px;
+  min-height: @headerHeight;
+
+  a:hover {
+    text-decoration: none;
+  }
+  .brand {
+    float: left;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding-bottom: 18px;
+  }
+  .brand-region {
+    bottom: 0;
+    color: @grayLight;
+    display: block;
+    font-family: arial;
+    font-size: 12px;
+    left: 0;
+    line-height: 18px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  .container {
+    padding: 0;
+  }
+  .logo-asuris {
+    // Height 45px
+    margin-bottom: 2px;
+    margin-top: 15px;
+  }
+  .logo-myasuris {
+    // Height 33px
+    margin-bottom: 7px;
+    margin-top: 22px;
+  }
+  .logo-myregence {
+    // Height 50px
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  .logo-regence-s,
+  .logo-regence-cs {
+    // Height 33px
+    margin-bottom: 7px;
+    margin-top: 22px;
+  }
+  .logo-regence-s .brand-region {
+    left: 36px;
+  }
+  .logo-regence-cs .brand-region {
+    left: 70px;
+  }
+  .span-controls {
+    border-top: 1px solid @headerLinkBorder;
+    position: relative;
+
+    a {
+      color: @headerLinkColor;
+      text-decoration: none;
+
+      &:hover {
+        background-color: @headerLinkBackground;
+        color: @headerLinkColorHover;
+        text-decoration: none;
+
+        small,
+        [class^="icon-"] {
+          color: @headerLinkColorHover;
+        }
+      }
+    }
+    a:hover .caret,
+    .active > a .caret {
+      border-color: @white rgba(255,255,255,0) rgba(255,255,255,0);
+    }
+    .active > a {
+      background-color: @headerLinkBackground;
+      color: @white;
+      text-decoration: none;
+      
+      small,
+      [class^="icon-"] {
+        color: @white;
+      }
+    }
+    .active > a:hover,
+    .active > a:focus {
+      background-color: darken(@headerLinkBackground, 4%);
+    }
+    [class^="icon-"] {
+      color: @brand;
+    }
+  }
+  .span-controls > div {
+    border-left: 1px solid @headerLinkBorder;
+    height: @headerHeight;
+  }
+  .toggle {
+    padding: 0 20px;
+  }
+
+  // Buttons
+  .toggle {
+    display: block;
+    height: @headerHeight;
+    line-height: @headerHeight;
+    padding: 0 10px;
+    position: relative;
+    .transition(background-color .2s ease-in-out);
+
+    [class^="icon-"] {
+      font-size: 30px;
+    }
+  }
+  .search-toggle {
+    background: @white;
+    border-right: 1px solid @headerLinkBorder;
+    cursor: pointer;  
+    position: absolute;
+    right: 0;
+    top: 0; 
+    width: 140px; 
+  }
+  .search-toggle-button {
+    padding: 0 15px 0 20px;
+  }
+  .shopping-toggle-button {
+    height: 40px;
+    line-height: 20px;
+    padding: 25px 165px 25px 70px;
+
+    small {
+      color: @grayLight;
+      display: block;
+      font-size: 13px;
+    }
+    .caret,
+    [class^="icon-"] {
+      position: absolute;
+      top: 20px;
+    }
+    .caret,
+    .shopping-label {
+      display: block;
+    }
+    .caret {
+      border-top-color: @brand;
+      border-top-width: 8px;
+      border-right-width: 8px;
+      border-left-width:  8px;
+      margin-top: 22px;
+      right: 165px;
+    }
+    .icon-users {
+      left: 20px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}
+.brand {
+  background: url("../img/identity/identity.png") no-repeat;
+  display: block;
+  max-width: 250px;
+  min-width: 143px;
+  position: relative;
+  *width: 250px;
+
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Logos */
+.logo-asuris {
+  background-position: 0 -300px;
+  height: 45px;
+  width: 148px;
+}
+.logo-myasuris {
+  background-position: 0 -400px;
+  height: 33px;
+  width: 176px;
+}
+.logo-myregence {
+  background-position: 0 -200px;
+  height: 50px;
+  width: 250px;
+}
+.logo-regence-cs {
+  background-position: 0 0;
+  height: 33px;
+  width: 180px;
+}
+.logo-regence-s {
+  background-position: 0 -100px;
+  height: 33px;
+  width: 145px;
+}
+/* High Res Support */
+@media all and (-webkit-min-device-pixel-ratio : 1.5) {
+
+  .backgroundsize .brand {
+    background-image: url("../img/identity/identity@2x.png");
+    background-size: 250px auto; /* Actual width is 450px */
+  }
+}
+
+/* SVG Support */
+.svg.backgroundsize .logo-regence-cs {
+  background-image: url("../img/identity/regence-cs.svg");
+  background-position: 0 0;
+  background-size: 178px auto;
+}
+.svg.backgroundsize .logo-regence-s {
+  background-image: url("../img/identity/regence-s.svg");
+  background-position: 0 0;
+  background-size: 143px auto;
+}
+.svg.backgroundsize .logo-myregence {
+  background-image: url("../img/identity/myregence.svg");
+  background-position: 0 0;
+  background-size: 250px auto;
+}
+.svg.backgroundsize .logo-asuris {
+  background-image: url("../img/identity/asuris.svg");
+  background-position: 0 0;
+  background-size: 148px auto;
+}
+.svg.backgroundsize .logo-myasuris {
+  background-image: url("../img/identity/myasuris.svg");
+  background-position: 0 0;
+  background-size: 176px auto;
+}
+
+#footer {
+  background: @footerBackground;
+  color: @white;
+  font-size: 13px;
+  padding-bottom: @gridColumnWidth;
+
+  ul {
+    margin: 0;
+  }
+  .icon-feedback {
+    border: 1px solid @white;
+    display: block;
+    float: left;
+    height: 7px;
+    margin-right: 4px;
+    margin-top: 1px;
+    padding: 1px;
+    position: relative;
+    width: 7px;
+
+    b {
+      background: @white;
+      display: block;
+      height: 7px;
+      left: 4px;
+      position: absolute;
+      top: 1px;
+      width: 1px;
+    }
+    i {
+      background: @white;
+      display: block;
+      height: 1px;
+      left: 1px;
+      position: absolute;
+      top: 4px;
+      width: 7px;
+    }
+  }
+  p,
+  .nav-pills > li > a {
+    font-family: @sansFontFamily;
+    line-height: 14px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+#footer + .row-fluid {
+  border-top: 1px solid #FFF;
+}
