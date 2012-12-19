@@ -1,82 +1,239 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 #parse ($init)
 
 <html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
 
 <head>
-	<title>$the_title - $company_name</title>
+  <title>$the_title - $company_name</title>
 
-	$theme.include($top_head_include)
+  $theme.include($top_head_include)
+
+  <!-- Web Fonts -->
+  <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body class="$css_class">
 
-$theme.include($body_top_include)
+  $theme.include($body_top_include)
 
-#if ($is_signed_in)
-	#dockbar()
-#end
+  #if ($is_signed_in)
+    #dockbar()
+  #end
 
-<div id="wrapper">
-	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+  <a class="invisible" href="#main-content" id="skip-to-content" style="position:absolute;">#language("skip-to-content")</a>
 
-	<header id="banner" role="banner">
-		<div id="heading">
-			<h1 class="site-title">
-				<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
-					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-				</a>
+  <header id="header" role="banner">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span span-brand clearfix">
+          <a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
+            <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+          </a>
+          #if ($show_site_name)
+            <span class="site-name" title="#language("go-to") $site_name">
+              $site_name
+            </span>
+          #end
+        </div>
+        <div class="span span-controls">
+          <div class="shopping-toggle">
+            #if (!$is_signed_in)
+              <a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+            #end
+            <a id="js-shopping-toggle" href="#" class="toggle shopping-toggle-button"><span class="shopping-label">form <small>location</small></span><span class="icon-users" aria-hidden="true"></span><b class="caret"></b></a>
+          </div>
+          <div class="search-toggle">
+            <a id="js-search-toggle" class="toggle search-toggle-button"><span class="icon-search" aria-hidden="true"></span>&nbsp;&nbsp;Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-				#if ($show_site_name)
-					<span class="site-name" title="#language("go-to") $site_name">
-						$site_name
-					</span>
-				#end
-			</h1>
+  <div id="js-hero-dropdowns" class="hero-unit hero-inverted getHeroDropdownStatus">
+    <div class="container">
+      <div id="js-shopping-dropdown" class="show">
+        <div id="audience_dropdown_alert"></div>
+        <form class="clearfix form-personalize form-inline" id="form-personalize">
+          <div class="row-fluid">
+            <div class="span4">
+              <div id="personalization_message" class="new">
+                <h1>Hello</h1>
+                <p>Tell us who you are and<br /> we'll personalize the website.</p>
+              </div>
+            </div>
+            <div class="span8">
+              <div class="navbar tooltip-container">
+                <ul role="navigation" class="nav">
+                  <li class="text">I'm</li>
+                  <li class="dropdown" data-placement="top" data-original-title="Select from the dropdown menu" rel="tooltip">
+                    <a href="#" id="personalization_audience_dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                      audience <b class="caret"></b></a>
+                    <ul aria-labelledby="toggle-personalize" class="dropdown-menu" id="dropdown-personalize">
+                      <li id="option"><a>value</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav">
+                  <li class="text">in</li>
+                  <li class="input" data-placement="top" data-original-title="Enter your ZIP code" rel="tooltip"><input class="zip" id="zip-personalize" type="text" size="10" placeholder="ZIP code" value="zipcode"></li>
+                  <li class="button"><button class="btn" id="audience_region_button" type="submit">Go</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="js-search-dropdown" class="hide">
+        <form class="clearfix form-personalize form-inline" id="form-search">
+          <div class="row-fluid">
+            <div class="span5">
+              <h1>Search</h1>
+              <p>The fastest, easiest way to<br/> find what you need.</p> 
+            </div>
+            <div class="span7">
+              <div class="navbar">
+                <ul class="nav">
+                  <li><input class="search" id="search-query" type="text" size="12" placeholder="Search Regence.com"></li>
+                  <li><button class="btn" id="search_button" type="submit">Go</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div> <!-- /container -->
+  </div>
 
-			<h2 class="page-title">
-				<span>$the_title</span>
-			</h2>
-		</div>
+  <div class="container" id="main-content">
+    <nav class="site-breadcrumbs" id="breadcrumbs">
+      #breadcrumbs()
+    </nav>
+    <div class="article article-left-sidebar row-fluid">
+      <div class="content main-content">
+        <div class="page-header">
+          <h1>$the_title</h1>
+        </div>
+        <section id="content">
+          #if ($selectable)
+            $theme.include($content_include)
+          #else
+            $portletDisplay.recycle()
 
-		#if (!$is_signed_in)
-			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-		#end
+            $portletDisplay.setTitle($the_title)
 
-		#if ($has_navigation || $is_signed_in)
-			#parse ("$full_templates_path/navigation.vm")
-		#end
-	</header>
+            $theme.wrapPortlet("portlet.vm", $content_include)
+          #end
+        </section>
+      </div>
+    </div>
+    <!--[if lte IE 8]>
+    <hr/>
+    <div class="row-fluid">
+      <div class="alert alert-block fade in">
+        <button data-dismiss="alert" class="close" type="button">×</button>
+        <h4 class="alert-heading">You're using an old version of Internet Explorer</h4>
+        <p>We've designed this site to work best with the latest versions of Internet Explorer, Safari, Firefox, Chrome and Opera. Consider upgrading your browser to the latest version for enhanced functionality and improved security.</p>
+      </div>
+    </div>
+    <![endif]-->
+  </div> <!-- (main) /container -->
 
-	<div id="content">
-		<nav class="site-breadcrumbs" id="breadcrumbs">
-			<h1>
-				<span>#language("breadcrumbs")</span>
-			</h1>
+  <div id="primary-nav" class="container">
+    #if ($has_navigation || $is_signed_in)
+      #parse ("$full_templates_path/navigation.vm")
+    #end
+  </div> <!-- (primary nav) /container -->
 
-			#breadcrumbs()
-		</nav>
+  <div class="nav-secondary">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span2x4">
+          <h3 class="title">Shop for Health Insurance</h3>
+          <ul class="nav unstyled">
+            <li><a href="#">Individual and families</a></li>
+            <li><a href="#">Through an employer</a></li>
+            <li><a href="#">For Medicare</a></li>
+          </ul>
+        </div>
+        <div class="span2x4">
+          <h3 class="title">Current Customers</h3>
+          <ul class="nav unstyled">
+            <li><a href="#">Individual and families</a></li>
+            <li><a href="#">Coverage through an employer</a></li>
+            <li><a href="#">Medicare eligible</a></li>
+            <li><a href="#">myRegence.com</a></li>
+          </ul>
+        </div>
+        <div class="span2x4">
+          <h3 class="title">Health &amp; Wellness</h3>
+          <ul class="nav unstyled">
+            <li><a href="#">Treatment Cost Estimates</a></li>
+            <li><a href="#">Prescription Information</a></li>
+            <li><a href="#">Health Insurance Guide</a></li>
+            <li><a href="#">Health &amp; Wellness News</a></li>
+          </ul>
+        </div>
+        <div class="span2x4">
+          <h3 class="title">About Regence</h3>
+          <ul class="nav unstyled">
+            <li><a href="#">Non-Profit Health Insurance</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Company News</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+        <div class="span2x4">
+          <h3 class="title">About Regence</h3>
+          <ul class="nav unstyled">
+            <li><a href="#">Non-Profit Health Insurance</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Company News</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr/>
+      <div class="row-fluid">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li><a href="#contact">About Regence</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 
-		#if ($selectable)
-			$theme.include($content_include)
-		#else
-			$portletDisplay.recycle()
+  <footer id="footer" role="contentinfo">
+    <div class="row-fluid">
+      <div class="container">
+        <div class="span6">
+          <p>&copy; 2012 Regence <!-- BlueCross BlueShield of Oregon. All rights reserved. --></p>
+        </div>
+        <nav class="span6">
+          <ul class="nav nav-inverted nav-pills pull-right">
+            <li><a href="/legal/online-privacy-and-security/">Privacy</a></li>
+            <li><a href="/legal/terms-of-use/">Terms of Use</a></li>
+            <li><a href="javascript:void(0);" onClick="oo_feedback.show()"><span class="icon-feedback" aria-hidden="true"><b></b><i></i></span> Feedback</a></li>         
+              getEspanol()
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
 
-			$portletDisplay.setTitle($the_title)
-
-			$theme.wrapPortlet("portlet.vm", $content_include)
-		#end
-	</div>
-
-	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-			#language("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</p>
-	</footer>
-</div>
-
-$theme.include($body_bottom_include)
+  $theme.include($body_bottom_include)
 
 </body>
 
