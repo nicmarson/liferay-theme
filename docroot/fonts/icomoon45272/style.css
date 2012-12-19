@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-email:before {
+	content: "\26";
+}
+.icon-search:before {
+	content: "\29";
+}
+.icon-users:before {
+	content: "\2a";
+}
+.icon-United-States:before {
+	content: "\75";
+}
+.icon-Washington:before {
+	content: "\6b";
+}
+.icon-Utah:before {
+	content: "\7a";
+}
+.icon-phone:before {
+	content: "\27";
+}
+.icon-information:before {
+	content: "\30";
+}
+.icon-success:before {
+	content: "\31";
+}
+.icon-warning:before {
+	content: "\32";
+}
+.icon-Oregon:before {
+	content: "\72";
+}
+.icon-lightning:before {
+	content: "\21";
+}
+.icon-pointer:before {
+	content: "\70";
+}
+.icon-user-info:before {
+	content: "\69";
+}
+.icon-folder-closed:before {
+	content: "\f07b";
+}
+.icon-folder-open:before {
+	content: "\f07c";
+}
+.icon-checked:before {
+	content: "\f00c";
+}
+.icon-close:before {
+	content: "\f00d";
+}
+.icon-linked:before {
+	content: "\f0c1";
+}
+.icon-play:before {
+	content: "\e000";
+}
+.icon-new-tab:before {
+	content: "\e001";
+}
