@@ -1,0 +1,28 @@
+<header id="header" role="banner">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span span-brand clearfix">
+        <a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
+          <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+        </a>
+        #if ($show_site_name)
+          <span class="site-name" title="#language("go-to") $site_name">
+            $site_name
+          </span>
+        #end
+      </div>
+      <div class="span span-controls">
+        <div class="shopping-toggle">
+          #if (!$is_signed_in)
+            <a class="shopping-toggle-button" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+          #else
+            <a class="toggle shopping-toggle-button" href="#" id="js-shopping-toggle"><span class="shopping-label">form <small>location</small></span><span class="icon-users" aria-hidden="true"></span><b class="caret"></b></a>
+          #end
+        </div>
+        <div class="search-toggle">
+          <a id="js-search-toggle" class="toggle search-toggle-button"><span class="icon-search" aria-hidden="true"></span>&nbsp;&nbsp;Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
