@@ -14,7 +14,8 @@
          <color-scheme-images-path>${images-path}/color_schemes/${css-class}</color-scheme-images-path>
       </color-scheme>
       <color-scheme id="02" name="Asuris">
-         <css-class>regence</css-class>
+         <css-class>asuris</css-class>
+         <color-scheme-images-path>${images-path}/color_schemes/${css-class}</color-scheme-images-path>
       </color-scheme>
     </theme>
 </look-and-feel>

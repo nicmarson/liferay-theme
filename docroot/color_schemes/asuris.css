@@ -28,26 +28,92 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.clearfix {
+.asuris {
+  /*------------------------------------*\
+    $SCAFFOLDING
+\*------------------------------------*/
+
+  /* Special grid styles
+-------------------------------------------------- */
+
+  /*------------------------------------*\
+    $TYPE
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $BUTTON GROUPS
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $NAVS
+\*------------------------------------*/
+
+  /* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
+
+  /*------------------------------------*\
+    $ACCORDION
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $SHIM
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $HEADER
+    $FOOTER
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $HERO UNIT
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $PERSONALIZE
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $CONTACT
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $UTILITY
+    $UTILITIES
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $STYLE GUIDE
+\*------------------------------------*/
+
+}
+.asuris .clearfix {
   *zoom: 1;
 }
-.clearfix:before,
-.clearfix:after {
+.asuris .clearfix:before,
+.asuris .clearfix:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.clearfix:after {
+.asuris .clearfix:after {
   clear: both;
 }
-.hide-text {
+.asuris .hide-text {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
 }
-.input-block-level {
+.asuris .input-block-level {
   display: block;
   width: 100%;
   min-height: 30px;
@@ -55,10 +121,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*------------------------------------*\
-    $SCAFFOLDING
-\*------------------------------------*/
-body {
+.asuris body {
   background-color: #e6f0e0;
   background-image: -moz-linear-gradient(top, #d6e6cb, #ffffff);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d6e6cb), to(#ffffff));
@@ -68,9 +131,7 @@ body {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6e6cb', endColorstr='#ffffffff', GradientType=0);
 }
-/* Special grid styles
--------------------------------------------------- */
-.show-grid {
+.asuris .show-grid {
   background-image: linear-gradient(#d6e6cb 2px, transparent 1px), linear-gradient(0deg, #d6e6cb 2px, transparent 1px), linear-gradient(#f8f8f8 2px, transparent 1px), linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
   background-image: -moz-linear-gradient(#d6e6cb 2px, transparent 1px), -moz-linear-gradient(0deg, #d6e6cb 2px, transparent 1px), -moz-linear-gradient(#f8f8f8 2px, transparent 1px), -moz-linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
   background-image: -webkit-linear-gradient(#d6e6cb 2px, transparent 1px), -webkit-linear-gradient(0deg, #d6e6cb 2px, transparent 1px), -webkit-linear-gradient(#f8f8f8 2px, transparent 1px), -webkit-linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
@@ -83,7 +144,7 @@ body {
 
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
 }
-.show-grid [class*="span"] {
+.asuris .show-grid [class*="span"] {
   background: #ffffff;
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 3px;
@@ -92,80 +153,67 @@ body {
   min-height: 40px;
   line-height: 40px;
 }
-.show-grid:hover [class*="span"] {
+.asuris .show-grid:hover [class*="span"] {
   background: #ffffff;
 }
-/*------------------------------------*\
-    $TYPE
-    $TYPOGRAPHY
-\*------------------------------------*/
-h1 {
+.asuris h1 {
   color: #1e9442;
 }
-.section-header h1,
-.section-header h2,
-.section-header h3,
-.section-header h4,
-.section-header h5,
-.section-header h6 {
+.asuris .section-header h1,
+.asuris .section-header h2,
+.asuris .section-header h3,
+.asuris .section-header h4,
+.asuris .section-header h5,
+.asuris .section-header h6 {
   color: #1e9442;
 }
-blockquote {
+.asuris blockquote {
   background-color: #f1f6ee;
   border-left-color: #d6e6cb;
 }
-blockquote.pull-right {
+.asuris blockquote.pull-right {
   border-left-color: #d6e6cb;
 }
-/*------------------------------------*\
-    $BUTTON GROUPS
-\*------------------------------------*/
-.btn-link .caret {
+.asuris .btn-link .caret {
   border-top-color: #85b365;
 }
-.btn-link.collapsed .caret {
+.asuris .btn-link.collapsed .caret {
   border-left-color: #85b365;
 }
-/*------------------------------------*\
-    $FORMS
-\*------------------------------------*/
-.form-body {
+.asuris .form-body {
   border-top-color: #d6e6cb;
 }
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
+.asuris textarea,
+.asuris input[type="text"],
+.asuris input[type="password"],
+.asuris input[type="datetime"],
+.asuris input[type="datetime-local"],
+.asuris input[type="date"],
+.asuris input[type="month"],
+.asuris input[type="time"],
+.asuris input[type="week"],
+.asuris input[type="number"],
+.asuris input[type="email"],
+.asuris input[type="url"],
+.asuris input[type="search"],
+.asuris input[type="tel"],
+.asuris input[type="color"],
+.asuris .uneditable-input {
   border-color: 1px solid #bbd5a9;
   border-bottom-color: #d6e6cb;
 }
-select {
+.asuris select {
   border-color: #bbd5a9;
   border-bottom-color: #d6e6cb;
 }
-.uneditable-input,
-.uneditable-textarea {
+.asuris .uneditable-input,
+.asuris .uneditable-textarea {
   border-color: #bbd5a9;
 }
-.help-overlay {
+.asuris .help-overlay {
   color: #85b365;
 }
-/*------------------------------------*\
-    $NAVS
-\*------------------------------------*/
-.nav-primary > li > a {
+.asuris .nav-primary > li > a {
   background-color: #aecc98;
   border-color: #aecc98;
   -webkit-box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
@@ -173,14 +221,14 @@ select {
   box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
-.nav-primary > li > a:hover {
+.asuris .nav-primary > li > a:hover {
   background: #9dc284;
 }
-.nav-primary > .active > a,
-.nav-primary > .active > a:hover {
+.asuris .nav-primary > .active > a,
+.asuris .nav-primary > .active > a:hover {
   background: #93bb76;
 }
-.nav-secondary {
+.asuris .nav-secondary {
   background: #dce9d2;
   background-color: #e6f0e0;
   background-image: -moz-linear-gradient(top, #dce9d2, #f7faf4);
@@ -191,73 +239,59 @@ select {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdce9d2', endColorstr='#fff7faf4', GradientType=0);
 }
-.nav-secondary hr {
+.asuris .nav-secondary hr {
   border-top-color: #c1d8b0;
 }
-.nav-secondary .nav.unstyled a {
+.asuris .nav-secondary .nav.unstyled a {
   color: #3c552a;
 }
-.nav-secondary .nav.unstyled a:hover {
+.asuris .nav-secondary .nav.unstyled a:hover {
   color: #608843;
 }
-.nav-secondary .nav-pills a {
+.asuris .nav-secondary .nav-pills a {
   color: #608843;
 }
-.nav-secondary .title {
+.asuris .nav-secondary .title {
   color: #608843;
 }
-/* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
-.nav-treeview ul li:hover {
+.asuris .nav-treeview ul li:hover {
   background: #f1f6ee;
 }
-/*------------------------------------*\
-    $ACCORDION
-\*------------------------------------*/
-.accordion-toggle:hover {
+.asuris .accordion-toggle:hover {
   background-color: #f1f6ee;
 }
-/*------------------------------------*\
-    $SHIM
-\*------------------------------------*/
-.input-date-datepicker-control td.ui-datepicker-week-end a {
+.asuris .input-date-datepicker-control td.ui-datepicker-week-end a {
   background: #f1f6ee;
 }
-/*------------------------------------*\
-    $HEADER
-    $FOOTER
-\*------------------------------------*/
-#header .span-controls {
+.asuris #header .span-controls {
   border-top-color: #cdedbf;
 }
-#header .span-controls a:hover {
+.asuris #header .span-controls a:hover {
   background-color: #c7ebb7;
 }
-#header .span-controls .active > a {
+.asuris #header .span-controls .active > a {
   background-color: #c7ebb7;
 }
-#header .span-controls .active > a:hover,
-#header .span-controls .active > a:focus {
+.asuris #header .span-controls .active > a:hover,
+.asuris #header .span-controls .active > a:focus {
   background-color: #bbe7a7;
 }
-#header .span-controls [class^="icon-"] {
+.asuris #header .span-controls [class^="icon-"] {
   color: #1e9442;
 }
-#header .span-controls > div {
+.asuris #header .span-controls > div {
   border-left-color: #cdedbf;
 }
-#header .search-toggle {
+.asuris #header .search-toggle {
   border-right-color: #cdedbf;
 }
-#header .shopping-toggle-button .caret {
+.asuris #header .shopping-toggle-button .caret {
   border-top-color: #1e9442;
 }
-#footer {
+.asuris #footer {
   background-color: #243319;
 }
-/*------------------------------------*\
-    $ARTICLE
-\*------------------------------------*/
-.article {
+.asuris .article {
   background-color: #f3f8f0;
   background-image: -moz-linear-gradient(top, #ecf3e7, #ffffff);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ecf3e7), to(#ffffff));
@@ -267,28 +301,22 @@ select {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffecf3e7', endColorstr='#ffffffff', GradientType=0);
 }
-.article .sidebar h3 {
+.asuris .article .sidebar h3 {
   background: #ecf3e7;
   border-bottom-color: #e1ecd9;
   border-top-color: #e1ecd9;
 }
-.article-left-sidebar .sidebar .nav > li > a:hover {
+.asuris .article-left-sidebar .sidebar .nav > li > a:hover {
   color: #85b365;
 }
-.article-left-sidebar .sidebar .nav > .active > a,
-.article-left-sidebar .sidebar .nav > .active > a:hover {
+.asuris .article-left-sidebar .sidebar .nav > .active > a,
+.asuris .article-left-sidebar .sidebar .nav > .active > a:hover {
   color: #85b365;
 }
-/*------------------------------------*\
-    $HERO UNIT
-\*------------------------------------*/
-.hero-health-ins-guide .hero-caption-title {
+.asuris .hero-health-ins-guide .hero-caption-title {
   color: #85b365;
 }
-/*------------------------------------*\
-    $PERSONALIZE
-\*------------------------------------*/
-#js-hero-dropdowns {
+.asuris #js-hero-dropdowns {
   background-color: #a1d088;
   background-image: -moz-linear-gradient(top, #aad594, #93c977);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#aad594), to(#93c977));
@@ -298,113 +326,106 @@ select {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaad594', endColorstr='#ff93c977', GradientType=0);
 }
-.form-personalize .navbar .nav input,
-.form-personalize .navbar .nav .dropdown-toggle {
+.asuris .form-personalize .navbar .nav input,
+.asuris .form-personalize .navbar .nav .dropdown-toggle {
   background-color: #558d43;
 }
-.form-personalize .navbar .nav input:hover,
-.form-personalize .navbar .nav .dropdown-toggle:hover,
-.form-personalize .navbar .nav input:focus,
-.form-personalize .navbar .nav .dropdown-toggle:focus {
+.asuris .form-personalize .navbar .nav input:hover,
+.asuris .form-personalize .navbar .nav .dropdown-toggle:hover,
+.asuris .form-personalize .navbar .nav input:focus,
+.asuris .form-personalize .navbar .nav .dropdown-toggle:focus {
   background-color: #4d7f3c;
 }
-.form-personalize .navbar .nav input:active,
-.form-personalize .navbar .nav .dropdown-toggle:active {
+.asuris .form-personalize .navbar .nav input:active,
+.asuris .form-personalize .navbar .nav .dropdown-toggle:active {
   background-color: #447136;
 }
-.form-personalize .navbar .nav button {
+.asuris .form-personalize .navbar .nav button {
   border-color: #608843;
   color: #3c552a;
 }
-.form-personalize .navbar .nav li .dropdown-menu {
+.asuris .form-personalize .navbar .nav li .dropdown-menu {
   background-color: #4d7f3c;
 }
-.form-personalize .navbar .nav li .dropdown-menu a:hover,
-.form-personalize .navbar .nav li .dropdown-menu a:focus {
+.asuris .form-personalize .navbar .nav li .dropdown-menu a:hover,
+.asuris .form-personalize .navbar .nav li .dropdown-menu a:focus {
   background-color: #558d43;
 }
-/*------------------------------------*\
-    $CONTACT
-\*------------------------------------*/
-.res .popover .arrow {
+.asuris .res .popover .arrow {
   border-top-color: #1e9442;
 }
-.res .popover-content {
+.asuris .res .popover-content {
   background-color: #1e9442;
 }
-.res .highlightMarker:hover {
+.asuris .res .highlightMarker:hover {
   background-color: #f1f6ee;
 }
-/*------------------------------------*\
-    $UTILITY
-    $UTILITIES
-\*------------------------------------*/
-.bg-color-brand {
+.asuris .bg-color-brand {
   background-color: #1e9442 !important;
 }
-.bg-color-accent {
+.asuris .bg-color-accent {
   background-color: #85b365 !important;
 }
-.bg-color-accentDark {
+.asuris .bg-color-accentDark {
   background-color: #608843 !important;
 }
-.bg-color-accentDarker {
+.asuris .bg-color-accentDarker {
   background-color: #3c552a !important;
 }
-.bg-color-accentDarkest {
+.asuris .bg-color-accentDarkest {
   background-color: #243319 !important;
 }
-.bg-color-accentLight {
+.asuris .bg-color-accentLight {
   background-color: #aecc98 !important;
 }
-.bg-color-accentLighter {
+.asuris .bg-color-accentLighter {
   background-color: #d6e6cb !important;
 }
-.bg-color-accentLightest {
+.asuris .bg-color-accentLightest {
   background-color: #f1f6ee !important;
 }
-.text-color-brand {
+.asuris .text-color-brand {
   color: #1e9442 !important;
 }
-.text-color-accent {
+.asuris .text-color-accent {
   color: #85b365 !important;
 }
-.text-color-accentDark {
+.asuris .text-color-accentDark {
   color: #608843 !important;
 }
-.text-color-accentDarker {
+.asuris .text-color-accentDarker {
   color: #3c552a !important;
 }
-.text-color-accentDarkest {
+.asuris .text-color-accentDarkest {
   color: #243319 !important;
 }
-.text-color-accentLight {
+.asuris .text-color-accentLight {
   color: #aecc98 !important;
 }
-.text-color-accentLighter {
+.asuris .text-color-accentLighter {
   color: #d6e6cb !important;
 }
-/*------------------------------------*\
-    $STYLE GUIDE
-\*------------------------------------*/
-.glyph-sample {
+.asuris .glyph-sample {
   background-color: #f1f6ee;
   box-shadow: inset 0 0 0 1px #ffffff, 0 0 0 1px #d6e6cb;
 }
-.glyph-sample input {
+.asuris .glyph-sample input {
   background-color: #f1f6ee;
 }
-.nav-styleguide > li > a:hover {
+.asuris .nav-styleguide > li > a:hover {
   background-color: #f1f6ee;
 }
-/*------------------------------------*\
-    $RESPONSIVE
-\*------------------------------------*/
 @media (min-width: 768px) {
-  .article-left-sidebar .content {
+  .asuris {
+    /*------------------------------------*\
+      $768 Minimum
+  \*------------------------------------*/
+  
+  }
+  .asuris .article-left-sidebar .content {
     border-left-color: #ecf3e7;
   }
-  .article-right-sidebar .content {
+  .asuris .article-right-sidebar .content {
     border-right-color: #ecf3e7;
   }
 }

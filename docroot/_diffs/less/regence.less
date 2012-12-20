@@ -12,4 +12,14 @@
 @import "mixins.less";
 
 // Common color scheme styles
-@import "scheme.less";
+.regence {
+	@import "scheme.less";
+}
+
+// Tablets and larger
+@media (min-width: 768px) {
+
+	.regence {
+		@import "scheme-768-min.less";
+	}
+}

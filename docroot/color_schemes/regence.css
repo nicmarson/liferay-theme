@@ -28,26 +28,92 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.clearfix {
+.regence {
+  /*------------------------------------*\
+    $SCAFFOLDING
+\*------------------------------------*/
+
+  /* Special grid styles
+-------------------------------------------------- */
+
+  /*------------------------------------*\
+    $TYPE
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $BUTTON GROUPS
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $NAVS
+\*------------------------------------*/
+
+  /* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
+
+  /*------------------------------------*\
+    $ACCORDION
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $SHIM
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $HEADER
+    $FOOTER
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $HERO UNIT
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $PERSONALIZE
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $CONTACT
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $UTILITY
+    $UTILITIES
+\*------------------------------------*/
+
+  /*------------------------------------*\
+    $STYLE GUIDE
+\*------------------------------------*/
+
+}
+.regence .clearfix {
   *zoom: 1;
 }
-.clearfix:before,
-.clearfix:after {
+.regence .clearfix:before,
+.regence .clearfix:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.clearfix:after {
+.regence .clearfix:after {
   clear: both;
 }
-.hide-text {
+.regence .hide-text {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
 }
-.input-block-level {
+.regence .input-block-level {
   display: block;
   width: 100%;
   min-height: 30px;
@@ -55,10 +121,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*------------------------------------*\
-    $SCAFFOLDING
-\*------------------------------------*/
-body {
+.regence body {
   background-color: #ddeaf2;
   background-image: -moz-linear-gradient(top, #c6dde9, #ffffff);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c6dde9), to(#ffffff));
@@ -68,9 +131,7 @@ body {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc6dde9', endColorstr='#ffffffff', GradientType=0);
 }
-/* Special grid styles
--------------------------------------------------- */
-.show-grid {
+.regence .show-grid {
   background-image: linear-gradient(#c6dde9 2px, transparent 1px), linear-gradient(0deg, #c6dde9 2px, transparent 1px), linear-gradient(#f8f8f8 2px, transparent 1px), linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
   background-image: -moz-linear-gradient(#c6dde9 2px, transparent 1px), -moz-linear-gradient(0deg, #c6dde9 2px, transparent 1px), -moz-linear-gradient(#f8f8f8 2px, transparent 1px), -moz-linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
   background-image: -webkit-linear-gradient(#c6dde9 2px, transparent 1px), -webkit-linear-gradient(0deg, #c6dde9 2px, transparent 1px), -webkit-linear-gradient(#f8f8f8 2px, transparent 1px), -webkit-linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
@@ -83,7 +144,7 @@ body {
 
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
 }
-.show-grid [class*="span"] {
+.regence .show-grid [class*="span"] {
   background: #ffffff;
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 3px;
@@ -92,80 +153,67 @@ body {
   min-height: 40px;
   line-height: 40px;
 }
-.show-grid:hover [class*="span"] {
+.regence .show-grid:hover [class*="span"] {
   background: #ffffff;
 }
-/*------------------------------------*\
-    $TYPE
-    $TYPOGRAPHY
-\*------------------------------------*/
-h1 {
+.regence h1 {
   color: #0881c2;
 }
-.section-header h1,
-.section-header h2,
-.section-header h3,
-.section-header h4,
-.section-header h5,
-.section-header h6 {
+.regence .section-header h1,
+.regence .section-header h2,
+.regence .section-header h3,
+.regence .section-header h4,
+.regence .section-header h5,
+.regence .section-header h6 {
   color: #0881c2;
 }
-blockquote {
+.regence blockquote {
   background-color: #eff5f8;
   border-left-color: #c6dde9;
 }
-blockquote.pull-right {
+.regence blockquote.pull-right {
   border-left-color: #c6dde9;
 }
-/*------------------------------------*\
-    $BUTTON GROUPS
-\*------------------------------------*/
-.btn-link .caret {
+.regence .btn-link .caret {
   border-top-color: #599abd;
 }
-.btn-link.collapsed .caret {
+.regence .btn-link.collapsed .caret {
   border-left-color: #599abd;
 }
-/*------------------------------------*\
-    $FORMS
-\*------------------------------------*/
-.form-body {
+.regence .form-body {
   border-top-color: #c6dde9;
 }
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
+.regence textarea,
+.regence input[type="text"],
+.regence input[type="password"],
+.regence input[type="datetime"],
+.regence input[type="datetime-local"],
+.regence input[type="date"],
+.regence input[type="month"],
+.regence input[type="time"],
+.regence input[type="week"],
+.regence input[type="number"],
+.regence input[type="email"],
+.regence input[type="url"],
+.regence input[type="search"],
+.regence input[type="tel"],
+.regence input[type="color"],
+.regence .uneditable-input {
   border-color: 1px solid #a2c6da;
   border-bottom-color: #c6dde9;
 }
-select {
+.regence select {
   border-color: #a2c6da;
   border-bottom-color: #c6dde9;
 }
-.uneditable-input,
-.uneditable-textarea {
+.regence .uneditable-input,
+.regence .uneditable-textarea {
   border-color: #a2c6da;
 }
-.help-overlay {
+.regence .help-overlay {
   color: #599abd;
 }
-/*------------------------------------*\
-    $NAVS
-\*------------------------------------*/
-.nav-primary > li > a {
+.regence .nav-primary > li > a {
   background-color: #90bbd3;
   border-color: #90bbd3;
   -webkit-box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
@@ -173,14 +221,14 @@ select {
   box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
-.nav-primary > li > a:hover {
+.regence .nav-primary > li > a:hover {
   background: #7aaeca;
 }
-.nav-primary > .active > a,
-.nav-primary > .active > a:hover {
+.regence .nav-primary > .active > a,
+.regence .nav-primary > .active > a:hover {
   background: #6ba5c4;
 }
-.nav-secondary {
+.regence .nav-secondary {
   background: #dde9ef;
   background-color: #ebf2f5;
   background-image: -moz-linear-gradient(top, #dde9ef, #ffffff);
@@ -191,73 +239,59 @@ select {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdde9ef', endColorstr='#ffffffff', GradientType=0);
 }
-.nav-secondary hr {
+.regence .nav-secondary hr {
   border-top-color: #bad3df;
 }
-.nav-secondary .nav.unstyled a {
+.regence .nav-secondary .nav.unstyled a {
   color: #2b556c;
 }
-.nav-secondary .nav.unstyled a:hover {
+.regence .nav-secondary .nav.unstyled a:hover {
   color: #397290;
 }
-.nav-secondary .nav-pills a {
+.regence .nav-secondary .nav-pills a {
   color: #488fb5;
 }
-.nav-secondary .title {
+.regence .nav-secondary .title {
   color: #488fb5;
 }
-/* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
-.nav-treeview ul li:hover {
+.regence .nav-treeview ul li:hover {
   background: #eff5f8;
 }
-/*------------------------------------*\
-    $ACCORDION
-\*------------------------------------*/
-.accordion-toggle:hover {
+.regence .accordion-toggle:hover {
   background-color: #eff5f8;
 }
-/*------------------------------------*\
-    $SHIM
-\*------------------------------------*/
-.input-date-datepicker-control td.ui-datepicker-week-end a {
+.regence .input-date-datepicker-control td.ui-datepicker-week-end a {
   background: #eff5f8;
 }
-/*------------------------------------*\
-    $HEADER
-    $FOOTER
-\*------------------------------------*/
-#header .span-controls {
+.regence #header .span-controls {
   border-top-color: #d0e8f4;
 }
-#header .span-controls a:hover {
+.regence #header .span-controls a:hover {
   background-color: #afe1f7;
 }
-#header .span-controls .active > a {
+.regence #header .span-controls .active > a {
   background-color: #afe1f7;
 }
-#header .span-controls .active > a:hover,
-#header .span-controls .active > a:focus {
+.regence #header .span-controls .active > a:hover,
+.regence #header .span-controls .active > a:focus {
   background-color: #9cdaf5;
 }
-#header .span-controls [class^="icon-"] {
+.regence #header .span-controls [class^="icon-"] {
   color: #0881c2;
 }
-#header .span-controls > div {
+.regence #header .span-controls > div {
   border-left-color: #d0e8f4;
 }
-#header .search-toggle {
+.regence #header .search-toggle {
   border-right-color: #d0e8f4;
 }
-#header .shopping-toggle-button .caret {
+.regence #header .shopping-toggle-button .caret {
   border-top-color: #0881c2;
 }
-#footer {
+.regence #footer {
   background-color: #599abd url("../img/regence-footer-bg.png");
 }
-/*------------------------------------*\
-    $ARTICLE
-\*------------------------------------*/
-.article {
+.regence .article {
   background-color: #eff5f8;
   background-image: -moz-linear-gradient(top, #e4eef4, #ffffff);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4eef4), to(#ffffff));
@@ -267,28 +301,22 @@ select {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4eef4', endColorstr='#ffffffff', GradientType=0);
 }
-.article .sidebar h3 {
+.regence .article .sidebar h3 {
   background: #e4eef4;
   border-bottom-color: #d5e5ee;
   border-top-color: #d5e5ee;
 }
-.article-left-sidebar .sidebar .nav > li > a:hover {
+.regence .article-left-sidebar .sidebar .nav > li > a:hover {
   color: #599abd;
 }
-.article-left-sidebar .sidebar .nav > .active > a,
-.article-left-sidebar .sidebar .nav > .active > a:hover {
+.regence .article-left-sidebar .sidebar .nav > .active > a,
+.regence .article-left-sidebar .sidebar .nav > .active > a:hover {
   color: #599abd;
 }
-/*------------------------------------*\
-    $HERO UNIT
-\*------------------------------------*/
-.hero-health-ins-guide .hero-caption-title {
+.regence .hero-health-ins-guide .hero-caption-title {
   color: #599abd;
 }
-/*------------------------------------*\
-    $PERSONALIZE
-\*------------------------------------*/
-#js-hero-dropdowns {
+.regence #js-hero-dropdowns {
   background-color: #82c6e4;
   background-image: -moz-linear-gradient(top, #8fcce7, #6dbde0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8fcce7), to(#6dbde0));
@@ -298,113 +326,106 @@ select {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8fcce7', endColorstr='#ff6dbde0', GradientType=0);
 }
-.form-personalize .navbar .nav input,
-.form-personalize .navbar .nav .dropdown-toggle {
+.regence .form-personalize .navbar .nav input,
+.regence .form-personalize .navbar .nav .dropdown-toggle {
   background-color: #4d9ec0;
 }
-.form-personalize .navbar .nav input:hover,
-.form-personalize .navbar .nav .dropdown-toggle:hover,
-.form-personalize .navbar .nav input:focus,
-.form-personalize .navbar .nav .dropdown-toggle:focus {
+.regence .form-personalize .navbar .nav input:hover,
+.regence .form-personalize .navbar .nav .dropdown-toggle:hover,
+.regence .form-personalize .navbar .nav input:focus,
+.regence .form-personalize .navbar .nav .dropdown-toggle:focus {
   background-color: #4195b8;
 }
-.form-personalize .navbar .nav input:active,
-.form-personalize .navbar .nav .dropdown-toggle:active {
+.regence .form-personalize .navbar .nav input:active,
+.regence .form-personalize .navbar .nav .dropdown-toggle:active {
   background-color: #3c88a9;
 }
-.form-personalize .navbar .nav button {
+.regence .form-personalize .navbar .nav button {
   border-color: #397290;
   color: #244759;
 }
-.form-personalize .navbar .nav li .dropdown-menu {
+.regence .form-personalize .navbar .nav li .dropdown-menu {
   background-color: #4195b8;
 }
-.form-personalize .navbar .nav li .dropdown-menu a:hover,
-.form-personalize .navbar .nav li .dropdown-menu a:focus {
+.regence .form-personalize .navbar .nav li .dropdown-menu a:hover,
+.regence .form-personalize .navbar .nav li .dropdown-menu a:focus {
   background-color: #4d9ec0;
 }
-/*------------------------------------*\
-    $CONTACT
-\*------------------------------------*/
-.res .popover .arrow {
+.regence .res .popover .arrow {
   border-top-color: #0881c2;
 }
-.res .popover-content {
+.regence .res .popover-content {
   background-color: #0881c2;
 }
-.res .highlightMarker:hover {
+.regence .res .highlightMarker:hover {
   background-color: #eff5f8;
 }
-/*------------------------------------*\
-    $UTILITY
-    $UTILITIES
-\*------------------------------------*/
-.bg-color-brand {
+.regence .bg-color-brand {
   background-color: #0881c2 !important;
 }
-.bg-color-accent {
+.regence .bg-color-accent {
   background-color: #599abd !important;
 }
-.bg-color-accentDark {
+.regence .bg-color-accentDark {
   background-color: #397290 !important;
 }
-.bg-color-accentDarker {
+.regence .bg-color-accentDarker {
   background-color: #244759 !important;
 }
-.bg-color-accentDarkest {
+.regence .bg-color-accentDarkest {
   background-color: #152a35 !important;
 }
-.bg-color-accentLight {
+.regence .bg-color-accentLight {
   background-color: #90bbd3 !important;
 }
-.bg-color-accentLighter {
+.regence .bg-color-accentLighter {
   background-color: #c6dde9 !important;
 }
-.bg-color-accentLightest {
+.regence .bg-color-accentLightest {
   background-color: #eff5f8 !important;
 }
-.text-color-brand {
+.regence .text-color-brand {
   color: #0881c2 !important;
 }
-.text-color-accent {
+.regence .text-color-accent {
   color: #599abd !important;
 }
-.text-color-accentDark {
+.regence .text-color-accentDark {
   color: #397290 !important;
 }
-.text-color-accentDarker {
+.regence .text-color-accentDarker {
   color: #244759 !important;
 }
-.text-color-accentDarkest {
+.regence .text-color-accentDarkest {
   color: #152a35 !important;
 }
-.text-color-accentLight {
+.regence .text-color-accentLight {
   color: #90bbd3 !important;
 }
-.text-color-accentLighter {
+.regence .text-color-accentLighter {
   color: #c6dde9 !important;
 }
-/*------------------------------------*\
-    $STYLE GUIDE
-\*------------------------------------*/
-.glyph-sample {
+.regence .glyph-sample {
   background-color: #eff5f8;
   box-shadow: inset 0 0 0 1px #ffffff, 0 0 0 1px #c6dde9;
 }
-.glyph-sample input {
+.regence .glyph-sample input {
   background-color: #eff5f8;
 }
-.nav-styleguide > li > a:hover {
+.regence .nav-styleguide > li > a:hover {
   background-color: #eff5f8;
 }
-/*------------------------------------*\
-    $RESPONSIVE
-\*------------------------------------*/
 @media (min-width: 768px) {
-  .article-left-sidebar .content {
+  .regence {
+    /*------------------------------------*\
+      $768 Minimum
+  \*------------------------------------*/
+  
+  }
+  .regence .article-left-sidebar .content {
     border-left-color: #e4eef4;
   }
-  .article-right-sidebar .content {
+  .regence .article-right-sidebar .content {
     border-right-color: #e4eef4;
   }
 }
