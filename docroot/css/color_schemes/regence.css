@@ -1,6 +1,7 @@
 /*------------------------------------*\
     $REGENCE
 \*------------------------------------*/
+<<<<<<< HEAD
 body {
   background-color: green;
 }
@@ -13,6 +14,8 @@ body {
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+=======
+>>>>>>> sorted color schemes
 .clearfix {
   *zoom: 1;
 }
@@ -40,6 +43,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 .hidden {
   display: none;
   visibility: hidden;
@@ -1481,5 +1485,385 @@ body:after {
   body:after {
     background: blue;
     content: "desktop-xl";
+=======
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*------------------------------------*\
+    $SCAFFOLDING
+\*------------------------------------*/
+body {
+  background-color: #ddeaf2;
+  background-image: -moz-linear-gradient(top, #c6dde9, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c6dde9), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #c6dde9, #ffffff);
+  background-image: -o-linear-gradient(top, #c6dde9, #ffffff);
+  background-image: linear-gradient(to bottom, #c6dde9, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc6dde9', endColorstr='#ffffffff', GradientType=0);
+}
+/* Special grid styles
+-------------------------------------------------- */
+.show-grid {
+  background-image: linear-gradient(#c6dde9 2px, transparent 1px), linear-gradient(0deg, #c6dde9 2px, transparent 1px), linear-gradient(#f8f8f8 2px, transparent 1px), linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
+  background-image: -moz-linear-gradient(#c6dde9 2px, transparent 1px), -moz-linear-gradient(0deg, #c6dde9 2px, transparent 1px), -moz-linear-gradient(#f8f8f8 2px, transparent 1px), -moz-linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
+  background-image: -webkit-linear-gradient(#c6dde9 2px, transparent 1px), -webkit-linear-gradient(0deg, #c6dde9 2px, transparent 1px), -webkit-linear-gradient(#f8f8f8 2px, transparent 1px), -webkit-linear-gradient(0deg, #f8f8f8 2px, transparent 1px);
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+  -webkit-background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  /* webkit */
+
+  -moz-background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  /* firefox */
+
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+}
+.show-grid [class*="span"] {
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  min-height: 40px;
+  line-height: 40px;
+}
+.show-grid:hover [class*="span"] {
+  background: #ffffff;
+}
+/*------------------------------------*\
+    $TYPE
+    $TYPOGRAPHY
+\*------------------------------------*/
+h1 {
+  color: #0881c2;
+}
+.section-header h1,
+.section-header h2,
+.section-header h3,
+.section-header h4,
+.section-header h5,
+.section-header h6 {
+  color: #0881c2;
+}
+blockquote {
+  background-color: #eff5f8;
+  border-left-color: #c6dde9;
+}
+blockquote.pull-right {
+  border-left-color: #c6dde9;
+}
+/*------------------------------------*\
+    $BUTTON GROUPS
+\*------------------------------------*/
+.btn-link .caret {
+  border-top-color: #599abd;
+}
+.btn-link.collapsed .caret {
+  border-left-color: #599abd;
+}
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+.form-body {
+  border-top-color: #c6dde9;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border-color: 1px solid #a2c6da;
+  border-bottom-color: #c6dde9;
+}
+select {
+  border-color: #a2c6da;
+  border-bottom-color: #c6dde9;
+}
+.uneditable-input,
+.uneditable-textarea {
+  border-color: #a2c6da;
+}
+.help-overlay {
+  color: #599abd;
+}
+/*------------------------------------*\
+    $NAVS
+\*------------------------------------*/
+.nav-primary > li > a {
+  background-color: #90bbd3;
+  border-color: #90bbd3;
+  -webkit-box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 4px rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.nav-primary > li > a:hover {
+  background: #7aaeca;
+}
+.nav-primary > .active > a,
+.nav-primary > .active > a:hover {
+  background: #6ba5c4;
+}
+.nav-secondary {
+  background: #dde9ef;
+  background-color: #ebf2f5;
+  background-image: -moz-linear-gradient(top, #dde9ef, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dde9ef), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #dde9ef, #ffffff);
+  background-image: -o-linear-gradient(top, #dde9ef, #ffffff);
+  background-image: linear-gradient(to bottom, #dde9ef, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdde9ef', endColorstr='#ffffffff', GradientType=0);
+}
+.nav-secondary hr {
+  border-top-color: #bad3df;
+}
+.nav-secondary .nav.unstyled a {
+  color: #2b556c;
+}
+.nav-secondary .nav.unstyled a:hover {
+  color: #397290;
+}
+.nav-secondary .nav-pills a {
+  color: #488fb5;
+}
+.nav-secondary .title {
+  color: #488fb5;
+}
+/* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
+.nav-treeview ul li:hover {
+  background: #eff5f8;
+}
+/*------------------------------------*\
+    $ACCORDION
+\*------------------------------------*/
+.accordion-toggle:hover {
+  background-color: #eff5f8;
+}
+/*------------------------------------*\
+    $SHIM
+\*------------------------------------*/
+.input-date-datepicker-control td.ui-datepicker-week-end a {
+  background: #eff5f8;
+}
+/*------------------------------------*\
+    $HEADER
+    $FOOTER
+\*------------------------------------*/
+#header .span-controls {
+  border-top-color: #d0e8f4;
+}
+#header .span-controls a:hover {
+  background-color: #afe1f7;
+}
+#header .span-controls .active > a {
+  background-color: #afe1f7;
+}
+#header .span-controls .active > a:hover,
+#header .span-controls .active > a:focus {
+  background-color: #9cdaf5;
+}
+#header .span-controls [class^="icon-"] {
+  color: #0881c2;
+}
+#header .span-controls > div {
+  border-left-color: #d0e8f4;
+}
+#header .search-toggle {
+  border-right-color: #d0e8f4;
+}
+#header .shopping-toggle-button .caret {
+  border-top-color: #0881c2;
+}
+#footer {
+  background-color: #599abd url("../img/regence-footer-bg.png");
+}
+/*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+.article {
+  background-color: #eff5f8;
+  background-image: -moz-linear-gradient(top, #e4eef4, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4eef4), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #e4eef4, #ffffff);
+  background-image: -o-linear-gradient(top, #e4eef4, #ffffff);
+  background-image: linear-gradient(to bottom, #e4eef4, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe4eef4', endColorstr='#ffffffff', GradientType=0);
+}
+.article .sidebar h3 {
+  background: #e4eef4;
+  border-bottom-color: #d5e5ee;
+  border-top-color: #d5e5ee;
+}
+.article-left-sidebar .sidebar .nav > li > a:hover {
+  color: #599abd;
+}
+.article-left-sidebar .sidebar .nav > .active > a,
+.article-left-sidebar .sidebar .nav > .active > a:hover {
+  color: #599abd;
+}
+/*------------------------------------*\
+    $HERO UNIT
+\*------------------------------------*/
+.hero-health-ins-guide .hero-caption-title {
+  color: #599abd;
+}
+/*------------------------------------*\
+    $PERSONALIZE
+\*------------------------------------*/
+#js-hero-dropdowns {
+  background-color: #82c6e4;
+  background-image: -moz-linear-gradient(top, #8fcce7, #6dbde0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8fcce7), to(#6dbde0));
+  background-image: -webkit-linear-gradient(top, #8fcce7, #6dbde0);
+  background-image: -o-linear-gradient(top, #8fcce7, #6dbde0);
+  background-image: linear-gradient(to bottom, #8fcce7, #6dbde0);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8fcce7', endColorstr='#ff6dbde0', GradientType=0);
+}
+.form-personalize .navbar .nav input,
+.form-personalize .navbar .nav .dropdown-toggle {
+  background-color: #4d9ec0;
+}
+.form-personalize .navbar .nav input:hover,
+.form-personalize .navbar .nav .dropdown-toggle:hover,
+.form-personalize .navbar .nav input:focus,
+.form-personalize .navbar .nav .dropdown-toggle:focus {
+  background-color: #4195b8;
+}
+.form-personalize .navbar .nav input:active,
+.form-personalize .navbar .nav .dropdown-toggle:active {
+  background-color: #3c88a9;
+}
+.form-personalize .navbar .nav button {
+  border-color: #397290;
+  color: #244759;
+}
+.form-personalize .navbar .nav li .dropdown-menu {
+  background-color: #4195b8;
+}
+.form-personalize .navbar .nav li .dropdown-menu a:hover,
+.form-personalize .navbar .nav li .dropdown-menu a:focus {
+  background-color: #4d9ec0;
+}
+/*------------------------------------*\
+    $CONTACT
+\*------------------------------------*/
+.res .popover .arrow {
+  border-top-color: #0881c2;
+}
+.res .popover-content {
+  background-color: #0881c2;
+}
+.res .highlightMarker:hover {
+  background-color: #eff5f8;
+}
+/*------------------------------------*\
+    $UTILITY
+    $UTILITIES
+\*------------------------------------*/
+.bg-color-brand {
+  background-color: #0881c2 !important;
+}
+.bg-color-accent {
+  background-color: #599abd !important;
+}
+.bg-color-accentDark {
+  background-color: #397290 !important;
+}
+.bg-color-accentDarker {
+  background-color: #244759 !important;
+}
+.bg-color-accentDarkest {
+  background-color: #152a35 !important;
+}
+.bg-color-accentLight {
+  background-color: #90bbd3 !important;
+}
+.bg-color-accentLighter {
+  background-color: #c6dde9 !important;
+}
+.bg-color-accentLightest {
+  background-color: #eff5f8 !important;
+}
+.text-color-brand {
+  color: #0881c2 !important;
+}
+.text-color-accent {
+  color: #599abd !important;
+}
+.text-color-accentDark {
+  color: #397290 !important;
+}
+.text-color-accentDarker {
+  color: #244759 !important;
+}
+.text-color-accentDarkest {
+  color: #152a35 !important;
+}
+.text-color-accentLight {
+  color: #90bbd3 !important;
+}
+.text-color-accentLighter {
+  color: #c6dde9 !important;
+}
+/*------------------------------------*\
+    $STYLE GUIDE
+\*------------------------------------*/
+.glyph-sample {
+  background-color: #eff5f8;
+  box-shadow: inset 0 0 0 1px #ffffff, 0 0 0 1px #c6dde9;
+}
+.glyph-sample input {
+  background-color: #eff5f8;
+}
+.nav-styleguide > li > a:hover {
+  background-color: #eff5f8;
+}
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+@media (min-width: 768px) {
+  .article-left-sidebar .content {
+    border-left-color: #e4eef4;
+  }
+  .article-right-sidebar .content {
+    border-right-color: #e4eef4;
+>>>>>>> sorted color schemes
   }
 }
