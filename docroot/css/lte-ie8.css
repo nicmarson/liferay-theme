@@ -127,7 +127,7 @@
   padding: 20px 20px 40px;
 }
 .article-left-sidebar .content {
-  border-left: 1px solid #e4eef4;
+  border-left: 1px solid;
 }
 .article-left-sidebar .landing-content {
   border: none;
@@ -147,7 +147,7 @@
   padding: 6px 10px;
 }
 .article-right-sidebar .content {
-  border-right: 1px solid #e4eef4;
+  border-right: 1px solid;
 }
 .article-right-sidebar .span8 .main-content {
   margin-right: -4.5%;
