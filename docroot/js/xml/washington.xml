@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<markers>
+
+  <marker>
+    <lat>48.465232</lat>
+    <lng>-122.33123</lng>
+    <title>Burlington</title>
+    <address>333 Gilkey Road</address>
+    <suite></suite>
+    <city>Burlington</city>
+    <state>WA</state>
+    <zip>98208</zip>
+    <phone1>1 (877) 276-5906</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>47.88251</lat>
+    <lng>-122.206877</lng>
+    <title>Everett</title>
+    <address>12728 19th Street</address>
+    <suite>Suite 101</suite>
+    <city>Everett</city>
+    <state>WA</state>
+    <zip>98208</zip>
+    <phone1>(425) 348-8100</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>47.615239</lat>
+    <lng>-122.333365</lng>
+    <title>Seattle</title>
+    <address>1800 9th Avenue</address>
+    <suite></suite>
+    <city>Seattle</city>
+    <state>WA</state>
+    <zip>98101</zip>
+    <phone1>(206) 464-3600</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>47.248389</lat>
+    <lng>-122.440085</lng>
+    <title>Tacoma</title>
+    <address>1501 Market Street</address>
+    <suite></suite>
+    <city>Tacoma</city>
+    <state>WA</state>
+    <zip>98402</zip>
+    <phone1>1 (888) 367-2112</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>47.660821</lat>
+    <lng>-117.402318</lng>
+    <title>Spokane</title>
+    <address>528 E Spokane Falls Blvd</address>
+    <suite>Suite 301</suite>
+    <city>Spokane</city>
+    <state>WA</state>
+    <zip>99202</zip>
+    <phone1>1 (888) 344-5593</phone1>
+    <phone2>(509) 922-8072</phone2>
+    <fax></fax>
+    <hours></hours>
+  </marker>
+
+  <marker>
+    <lat>46.607154</lat>
+    <lng>-120.560216</lng>
+    <title>Yakima</title>
+    <address>603 39th Ave</address>
+    <suite>Suite 100</suite>
+    <city>Yakima</city>
+    <state>WA</state>
+    <zip>98902</zip>
+    <phone1>1 (888) 344-5593</phone1>
+    <phone2></phone2>
+    <fax>(509) 573-6818</fax>
+    <hours></hours>
+  </marker>
+
+</markers>

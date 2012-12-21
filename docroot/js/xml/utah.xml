@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<markers>
+
+  <marker>
+    <lat>40.632754</lat>
+    <lng>-111.810136</lng>
+    <title>Salt Lake City</title>
+    <address>2890 E Cottonwood Parkway</address>
+    <suite>Suite 110</suite>
+    <city>Salt Lake City</city>
+    <state>UT</state>
+    <zip>84121</zip>
+    <phone1>(801) 333-2000</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+</markers>

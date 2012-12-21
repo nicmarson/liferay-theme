@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<markers>
+
+  <marker>
+    <lat>43.615514</lat>
+    <lng>-116.211526</lng>
+    <title>Boise</title>
+    <address>1211 West Myrtle</address>
+    <suite>Suite 110</suite>
+    <city>Boise</city>
+    <state>ID</state>
+    <zip>83702</zip>
+    <phone1>(208) 336-2420</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>47.697911</lat>
+    <lng>-116.812298</lng>
+    <title>Coeur d'Alene</title>
+    <address>2065 West Riverstone Drive</address>
+    <suite>Suite 202</suite>
+    <city>Coeur d'Alene</city>
+    <state>ID</state>
+    <zip>83814</zip>
+    <phone1>(208) 667-2761</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>46.398787</lat>
+    <lng>-117.009386</lng>
+    <title>Lewiston</title>
+    <address>1602 21st Avenue</address>
+    <suite></suite>
+    <city>Lewiston</city>
+    <state>ID</state>
+    <zip>83501</zip>
+    <phone1>(208) 746-2671</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+  <marker>
+    <lat>42.896007</lat>
+    <lng>-112.436906</lng>
+    <title>Pocatello</title>
+    <address>1175 Call Place</address>
+    <suite>Suite 100</suite>
+    <city>Pocatello</city>
+    <state>ID</state>
+    <zip>83201</zip>
+    <phone1>(208) 234-0020</phone1>
+    <phone2></phone2>
+    <fax></fax>
+    <hours>Open weekdays 8-5</hours>
+  </marker>
+
+</markers>
