@@ -13,11 +13,7 @@
       </div>
       <div class="span span-controls">
         <div class="shopping-toggle">
-          #if (!$is_signed_in)
-            <a class="shopping-toggle-button" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-          #else
-            <a class="toggle shopping-toggle-button" href="#" id="js-shopping-toggle"><span class="shopping-label">form <small>location</small></span><span class="icon-users" aria-hidden="true"></span><b class="caret"></b></a>
-          #end
+          <a class="toggle shopping-toggle-button" href="#" id="js-shopping-toggle"><span class="shopping-label">form <small>location</small></span><span class="icon-users" aria-hidden="true"></span><b class="caret"></b></a>
         </div>
         <div class="search-toggle">
           <a id="js-search-toggle" class="toggle search-toggle-button"><span class="icon-search" aria-hidden="true"></span>&nbsp;&nbsp;Search</a>

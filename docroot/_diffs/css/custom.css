@@ -5612,23 +5612,23 @@ img.leadership-photo {
   font: 18px "ProximaNova-Regular", Verdana, sans-serif;
   text-transform: uppercase;
 }
-.landing .hero-unit {
-  margin-bottom: 0;
-}
-.hero-inverted {
+.hero-unit.hero-inverted {
   color: #ffffff;
   padding: 20px 0;
 }
-.hero-inverted a,
-.hero-inverted h1 {
+.hero-unit.hero-inverted a,
+.hero-unit.hero-inverted h1 {
   color: #ffffff;
 }
-.hero-inverted .hero-inner-title {
+.hero-unit.hero-inverted .hero-inner-title {
   color: #ffffff;
 }
-.hero-inverted .hero-inner-title small {
+.hero-unit.hero-inverted .hero-inner-title small {
   color: #ffffff;
   font-family: "ProximaNova-Regular", Verdana, sans-serif;
+}
+.landing .hero-unit {
+  margin-bottom: 0;
 }
 .hero-image {
   padding: 0;
@@ -9470,18 +9470,18 @@ body:after {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8fcce7', endColorstr='#ff6dbde0', GradientType=0);
 }
-.asuris .form-personalize .navbar .nav input,
-.asuris .form-personalize .navbar .nav .dropdown-toggle {
+.asuris .form-personalize .navbar .nav .dropdown-toggle,
+.asuris .form-personalize .navbar .nav .zip {
   background-color: #4d9ec0;
 }
-.asuris .form-personalize .navbar .nav input:hover,
 .asuris .form-personalize .navbar .nav .dropdown-toggle:hover,
-.asuris .form-personalize .navbar .nav input:focus,
-.asuris .form-personalize .navbar .nav .dropdown-toggle:focus {
+.asuris .form-personalize .navbar .nav .zip:hover,
+.asuris .form-personalize .navbar .nav .dropdown-toggle:focus,
+.asuris .form-personalize .navbar .nav .zip:focus {
   background-color: #4195b8;
 }
-.asuris .form-personalize .navbar .nav input:active,
-.asuris .form-personalize .navbar .nav .dropdown-toggle:active {
+.asuris .form-personalize .navbar .nav .dropdown-toggle:active,
+.asuris .form-personalize .navbar .nav .zip:active {
   background-color: #3c88a9;
 }
 .asuris .form-personalize .navbar .nav button {
@@ -9901,18 +9901,18 @@ body:after {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8fcce7', endColorstr='#ff6dbde0', GradientType=0);
 }
-.regence .form-personalize .navbar .nav input,
-.regence .form-personalize .navbar .nav .dropdown-toggle {
+.regence .form-personalize .navbar .nav .dropdown-toggle,
+.regence .form-personalize .navbar .nav .zip {
   background-color: #4d9ec0;
 }
-.regence .form-personalize .navbar .nav input:hover,
 .regence .form-personalize .navbar .nav .dropdown-toggle:hover,
-.regence .form-personalize .navbar .nav input:focus,
-.regence .form-personalize .navbar .nav .dropdown-toggle:focus {
+.regence .form-personalize .navbar .nav .zip:hover,
+.regence .form-personalize .navbar .nav .dropdown-toggle:focus,
+.regence .form-personalize .navbar .nav .zip:focus {
   background-color: #4195b8;
 }
-.regence .form-personalize .navbar .nav input:active,
-.regence .form-personalize .navbar .nav .dropdown-toggle:active {
+.regence .form-personalize .navbar .nav .dropdown-toggle:active,
+.regence .form-personalize .navbar .nav .zip:active {
   background-color: #3c88a9;
 }
 .regence .form-personalize .navbar .nav button {
