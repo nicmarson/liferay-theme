@@ -237,11 +237,8 @@ select {
   .span-controls {
     border-top-color: @headerLinkBorder;
 
-    a {
-
-      &:hover {
-        background-color: @headerLinkBackground;
-      }
+    a:hover {
+      background-color: @headerLinkBackground;
     }
     .active > a {
       background-color: @headerLinkBackground;
@@ -267,7 +264,7 @@ select {
   }
 }
 #footer {
-  background-color: @footerBackground;
+  background: @footerBackground;
 }
 
 
@@ -334,7 +331,7 @@ select {
 
     .dropdown-toggle,
     .zip {
-      background-color: @personalizeInput;
+      background: @personalizeInput;
 
       &:hover,
       &:focus {
