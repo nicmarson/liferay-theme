@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    $PORTLET
+\*------------------------------------*/
+
+.portlet-boundary .portlet {
+  border: 2px solid @grayLighter;
+}
+
+.portlet-topper {
+  background: @grayLightest;
+  padding-left: 10px;
+}
+
+.portlet-title .portlet-title-text {
+  color: #000;
+  font-family: @sansFontFamily;
+}
+
+.portlet-layout:hover {
+
+  .portlet-topper {
+    background: @grayLighter;
+  }
+}
+
+.portlet-topper-toolbar {
+  background: #FFF;
+  padding: 0;
+  right: 0;
+  top: 0;
+
+  a {
+    display: block;
+    float: left;
+    padding: 0 4px;
+    width: 16px;
+
+    &:hover {
+      background: @grayLightest;
+      text-decoration: none;
+    }
+    img {
+      vertical-align: inherit;
+    }
+  }
+}

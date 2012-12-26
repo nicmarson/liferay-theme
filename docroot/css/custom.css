@@ -1373,19 +1373,19 @@ fieldset.glyph [class^="icon-"] {
   top: 8px;
 }
 fieldset.glyph.glyph-user-details {
-  background: url("../img/forms/glyph-user-details.png") no-repeat 0 4px;
+  background: url("../images/forms/glyph-user-details.png") no-repeat 0 4px;
 }
 fieldset.glyph.glyph-care-provider {
-  background: url("../img/forms/glyph-care-provider.png") no-repeat 0 4px;
+  background: url("../images/forms/glyph-care-provider.png") no-repeat 0 4px;
 }
 fieldset.glyph.glyph-pregnancy {
-  background: url("../img/forms/glyph-pregnancy.png") no-repeat 0 4px;
+  background: url("../images/forms/glyph-pregnancy.png") no-repeat 0 4px;
 }
 fieldset.glyph.glyph-medical-history {
-  background: url("../img/forms/glyph-medical-history.png") no-repeat 0 4px;
+  background: url("../images/forms/glyph-medical-history.png") no-repeat 0 4px;
 }
 fieldset.glyph.glyph-contact-method {
-  background: url("../img/forms/glyph-contact-method.png") no-repeat 0 4px;
+  background: url("../images/forms/glyph-contact-method.png") no-repeat 0 4px;
 }
 .glyph-sample {
   -webkit-border-radius: 4px;
@@ -2603,7 +2603,7 @@ h4.alert-heading {
   color: #bf913b;
 }
 .alert-404 {
-  background: transparent url("../img/content/large-warning.png") no-repeat 0 12px;
+  background: transparent url("../images/content/large-warning.png") no-repeat 0 12px;
   color: #999999;
   font-family: "ProximaNova-Regular", Verdana, sans-serif;
   font-size: 24px;
@@ -4545,7 +4545,7 @@ img.ui-datepicker-trigger {
   cursor: pointer;
   font-size: 0;
   line-height: 0;
-  background: url(../img/forms/forms.png) no-repeat 0 0;
+  background: url(../images/forms/forms.png) no-repeat 0 0;
 }
 .polyfill-important .step-controls span {
   display: inline-block !important;
@@ -5174,7 +5174,7 @@ summary {
   display: inline-block;
   width: 16px;
   height: 11px;
-  background: url(../img/forms/details-arrows.png) no-repeat 0 0;
+  background: url(../images/forms/details-arrows.png) no-repeat 0 0;
   vertical-align: middle;
 }
 .closed-details-summary .details-open-indicator {
@@ -5187,7 +5187,7 @@ summary {
   display: inline-block !important;
   width: 16px !important;
   height: 11px !important;
-  background: url(../img/forms/details-arrows.png) no-repeat 0 0 !important;
+  background: url(../images/forms/details-arrows.png) no-repeat 0 0 !important;
   vertical-align: middle !important;
 }
 .polyfill-important .closed-details-summary .details-open-indicator {
@@ -5350,7 +5350,7 @@ summary.summary-has-focus {
   line-height: 40px;
 }
 .brand {
-  background: url("../img/identity/identity.png") no-repeat;
+  background: url("../images/identity/identity.png") no-repeat;
   display: block;
   max-width: 250px;
   min-width: 143px;
@@ -5391,7 +5391,7 @@ summary.summary-has-focus {
 /* High Res Support */
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .backgroundsize .brand {
-    background-image: url("../img/identity/identity@2x.png");
+    background-image: url("../images/identity/identity@2x.png");
     background-size: 250px auto;
     /* Actual width is 450px */
   
@@ -5399,27 +5399,27 @@ summary.summary-has-focus {
 }
 /* SVG Support */
 .svg.backgroundsize .logo-regence-cs {
-  background-image: url("../img/identity/regence-cs.svg");
+  background-image: url("../images/identity/regence-cs.svg");
   background-position: 0 0;
   background-size: 178px auto;
 }
 .svg.backgroundsize .logo-regence-s {
-  background-image: url("../img/identity/regence-s.svg");
+  background-image: url("../images/identity/regence-s.svg");
   background-position: 0 0;
   background-size: 143px auto;
 }
 .svg.backgroundsize .logo-myregence {
-  background-image: url("../img/identity/myregence.svg");
+  background-image: url("../images/identity/myregence.svg");
   background-position: 0 0;
   background-size: 250px auto;
 }
 .svg.backgroundsize .logo-asuris {
-  background-image: url("../img/identity/asuris.svg");
+  background-image: url("../images/identity/asuris.svg");
   background-position: 0 0;
   background-size: 148px auto;
 }
 .svg.backgroundsize .logo-myasuris {
-  background-image: url("../img/identity/myasuris.svg");
+  background-image: url("../images/identity/myasuris.svg");
   background-position: 0 0;
   background-size: 176px auto;
 }
@@ -5925,6 +5925,42 @@ img.leadership-photo {
   left: 20px;
   position: absolute;
   top: 0;
+}
+/*------------------------------------*\
+    $PORTLET
+\*------------------------------------*/
+.portlet-boundary .portlet {
+  border: 2px solid #e9e9e9;
+}
+.portlet-topper {
+  background: #f8f8f8;
+  padding-left: 10px;
+}
+.portlet-title .portlet-title-text {
+  color: #000;
+  font-family: "ProximaNova-Regular", Verdana, sans-serif;
+}
+.portlet-layout:hover .portlet-topper {
+  background: #e9e9e9;
+}
+.portlet-topper-toolbar {
+  background: #FFF;
+  padding: 0;
+  right: 0;
+  top: 0;
+}
+.portlet-topper-toolbar a {
+  display: block;
+  float: left;
+  padding: 0 4px;
+  width: 16px;
+}
+.portlet-topper-toolbar a:hover {
+  background: #f8f8f8;
+  text-decoration: none;
+}
+.portlet-topper-toolbar a img {
+  vertical-align: inherit;
 }
 /*------------------------------------*\
     $CONTACT
