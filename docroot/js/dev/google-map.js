@@ -2,77 +2,77 @@
  * map
  */
 var imageA = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,0),
   new google.maps.Point(12,38)
 );
 
 var imageB = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,40),
   new google.maps.Point(12,38)
 );
 
 var imageC = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,80),
   new google.maps.Point(12,38)
 );
 
 var imageD = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,120),
   new google.maps.Point(12,38)
 );
 
 var imageE = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,160),
   new google.maps.Point(12,38)
 );
 
 var imageF = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,200),
   new google.maps.Point(12,38)
 );
 
 var imageG = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,240),
   new google.maps.Point(12,38)
 );
 
 var imageH = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,280),
   new google.maps.Point(12,38)
 );
 
 var imageI = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,320),
   new google.maps.Point(12,38)
 );
 
 var imageJ = new google.maps.MarkerImage(
-  '/assets/img/marker-images/sprite.png',
+  '../images/marker-images/sprite.png',
   new google.maps.Size(24,38),
   new google.maps.Point(0,360),
   new google.maps.Point(12,38)
 );
 
 var shadow = new google.maps.MarkerImage(
-  '/assets/img/marker-images/shadow.png',
+  '../images/marker-images/shadow.png',
   new google.maps.Size(46,38),
   new google.maps.Point(0,0),
   new google.maps.Point(12,38)

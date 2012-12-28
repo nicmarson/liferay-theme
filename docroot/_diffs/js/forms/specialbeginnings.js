@@ -194,7 +194,7 @@ function multipartFormSetup(params){
 				i++;
 			});
 		});
-		var throbber = '<img src="/assets/img/forms/polyfill-loader.gif" border="0" style="height:100%;width:100%">'
+		var throbber = '<img src="../images/forms/polyfill-loader.gif" border="0" style="height:100%;width:100%">'
 		rightButton.html(throbber);
 		$.post('/forms/send/', submitArray)
 		.success(function() {

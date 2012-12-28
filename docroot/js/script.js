@@ -640,7 +640,7 @@ $(function() {
 	$(document).on('submit', '.email-form', function(e){
 		e.preventDefault();
 		var existingSubmitText = $('.email-form button[type="submit"]').html();
-		var throbber = '<img src="/assets/img/forms/polyfill-loader.gif" border="0" style="height:100%;width:100%">';
+		var throbber = '<img src="../images/forms/polyfill-loader.gif" border="0" style="height:100%;width:100%">';
 		$('.email-form button[type="submit"]').html(throbber);
 		$(".email-form :input").attr('disabled','');
 		$.post('/forms/send/', $(this).serialize())

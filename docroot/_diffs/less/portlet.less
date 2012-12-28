@@ -6,25 +6,35 @@
   border: 2px solid @grayLighter;
 }
 
+.portlet-dropzone {
+  background-color: @grayLightest;
+}
+
 .portlet-topper {
-  background: @grayLightest;
-  padding-left: 10px;
-}
+  background-color: @grayLightest;
 
-.portlet-title .portlet-title-text {
-  color: #000;
-  font-family: @sansFontFamily;
-}
-
-.portlet-layout:hover {
-
-  .portlet-topper {
-    background: @grayLighter;
+  .portlet-title {
+    color: #000;
+    font-family: @sansFontFamily;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+  }
+  .portlet-title-text {
+    font-size: 13px;
   }
 }
 
-.portlet-topper-toolbar {
+.portlet-content {
   background: #FFF;
+}
+
+.portlet:hover .portlet-topper {
+  background: @grayLighter;
+}
+
+.portlet-topper-toolbar {
+  background-color: #FFF;
   padding: 0;
   right: 0;
   top: 0;
@@ -43,4 +53,13 @@
       vertical-align: inherit;
     }
   }
+}
+
+.aui-tabview-list {
+  font-size: 11px;
+  line-height: 16px;
+}
+.aui-tab-content {
+  font-size: 13px;
+  line-height: 18px;
 }
