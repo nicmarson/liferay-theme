@@ -12,14 +12,15 @@
 @import "mixins.less";
 
 // Common color scheme styles
-.asuris {
-	@import "scheme.less";
+body.asuris {
+  #gradient > .vertical(@bodyTopColor, @bodyBackground);
+  @import "scheme.less";
 }
 
 // Tablets and larger
 @media (min-width: 768px) {
 
-	.asuris {
-		@import "scheme-768-min.less";
-	}
+  .asuris {
+    @import "scheme-768-min.less";
+  }
 }

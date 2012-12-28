@@ -2,7 +2,7 @@
     $ARTICLE
 \*------------------------------------*/
 
-.article {
+article {
 
   .byline-container {
     margin-top: -(@baseLineHeight / 2);
@@ -14,19 +14,9 @@
   }
   .content {
     background: @white;
-  }
-  .main-content {
     padding: @baseLineHeight;
   }
-  .landing-content {
-    border: none;
-
-    .page-header {
-      margin: 0;
-      padding: @baseLineHeight;
-    }
-  }
-  .sidebar {
+  aside {
     padding-top: (@gridGutterWidth*2);
 
     h3 {
@@ -42,7 +32,7 @@
       border: none;
       padding: 10px 15px;
     }
-    .nav > li > a {
+    .nav-menu .level-1 > li > a {
       color: @textColor;
 
       &:hover {
@@ -51,10 +41,11 @@
         text-decoration: underline;
       }
     }
-    .nav > .active > a,
-    .nav > .active > a:hover {
+    .nav-menu ul > .selected > a,
+    .nav-menu ul > .selected > a:hover {
       background: none;
       color: @linkColorHover;
+      font-weight: normal;
       text-shadow: 0 1px 0 rgba(255,255,255,.5);
     }
   }
@@ -64,22 +55,22 @@
   }  
 }
 
+// Landing
+.landing article .content {
+  border: none;
+  padding: 0;
+}
+
 // Left Sidebar
-.article-left-sidebar {
+.article-left-sidebar aside .nav-menu .level-1 > li > a {
+  color: @grayLight;
+  font: 24px @sansFontFamilyLight;
+  line-height: 24px;
+  padding: 12px 15px;
 
-  .sidebar {
-
-    .nav > li > a {
-      color: @grayLight;
-      font: 24px @sansFontFamilyLight;
-      line-height: 24px;
-      padding: 12px 15px;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }  
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 

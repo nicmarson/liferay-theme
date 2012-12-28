@@ -124,10 +124,7 @@
 
 // Article
 // -------
-.article-list > li {
-  font-size: 14px;
-}
-.article .main-content {
+article .content {
   padding: @gridGutterWidth @gridGutterWidth (@baseLineHeight*2);
 }
 .article-left-sidebar {
@@ -138,19 +135,21 @@
   .landing-content {
     border: none;
   }
-  .span8 .main-content {
-    margin-left: -4.5%;
+  .span8 .content {
+    margin-left: -4.1%;
+    margin-right: -4.35%;
   }
-  .span9 .main-content {
+  .span9 .content {
     margin-left: -4%;
   }
-  .sidebar .nav {
+  .sidebar .nav-menu {
     text-align: right;
-  }
-  .sidebar .nav > li > a {
-    font-size: 16px;
-    line-height: 18px;
-    padding: 6px 10px;
+
+    ul > li > a {
+      font-size: 16px;
+      line-height: 18px;
+      padding: 6px 10px;
+    }
   }
 }
 .article-right-sidebar {
@@ -158,21 +157,15 @@
   .content {
     border-right: 1px solid;
   }
-  .span8 .main-content {
+  .span8 .content {
     margin-right: -4.5%;
   }
-  .span9 .main-content {
+  .span9 .content {
     margin-right: -4%;
   }
 }
-.article-left-sidebar.article-right-sidebar {
-
-  // Articles with span3 left sidebar
-  // and span1 right sidebar
-  .span8 .main-content {      
-    margin-left: -4.1%;
-    margin-right: -4.35%;
-  }
+.article-list > li {
+  font-size: 14px;
 }
 
 // Magazine

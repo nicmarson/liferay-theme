@@ -28,6 +28,9 @@
   #parse ("$full_templates_path/header_first.vm")
   
   <div class="container" id="main-content" role="main">
+    <div class="page-header">
+      <h1>$the_title</h1>
+    </div>
   #if ($selectable)
     $theme.include($content_include)
   #else

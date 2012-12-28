@@ -120,10 +120,7 @@
   float: right;
   padding-left: 20px;
 }
-.article-list > li {
-  font-size: 14px;
-}
-.article .main-content {
+article .content {
   padding: 20px 20px 40px;
 }
 .article-left-sidebar .content {
@@ -132,16 +129,17 @@
 .article-left-sidebar .landing-content {
   border: none;
 }
-.article-left-sidebar .span8 .main-content {
-  margin-left: -4.5%;
+.article-left-sidebar .span8 .content {
+  margin-left: -4.1%;
+  margin-right: -4.35%;
 }
-.article-left-sidebar .span9 .main-content {
+.article-left-sidebar .span9 .content {
   margin-left: -4%;
 }
-.article-left-sidebar .sidebar .nav {
+.article-left-sidebar .sidebar .nav-menu {
   text-align: right;
 }
-.article-left-sidebar .sidebar .nav > li > a {
+.article-left-sidebar .sidebar .nav-menu ul > li > a {
   font-size: 16px;
   line-height: 18px;
   padding: 6px 10px;
@@ -149,15 +147,14 @@
 .article-right-sidebar .content {
   border-right: 1px solid;
 }
-.article-right-sidebar .span8 .main-content {
+.article-right-sidebar .span8 .content {
   margin-right: -4.5%;
 }
-.article-right-sidebar .span9 .main-content {
+.article-right-sidebar .span9 .content {
   margin-right: -4%;
 }
-.article-left-sidebar.article-right-sidebar .span8 .main-content {
-  margin-left: -4.1%;
-  margin-right: -4.35%;
+.article-list > li {
+  font-size: 14px;
 }
 h2.teaser-title {
   font-size: 20px;
@@ -304,25 +301,22 @@ h3.teaser-title {
 .form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
   width: 245px;
 }
-.article-left-sidebar .span8 .main-content {
-  margin-left: -3.4%;
+.article-left-sidebar .span8 .content {
+  margin-left: -4.1%;
+  margin-right: -3.5%;
 }
-.article-left-sidebar .span9 .main-content {
+.article-left-sidebar .span9 .content {
   margin-left: -3.5%;
 }
-.article-left-sidebar .sidebar .nav > li > a {
+.article-left-sidebar .sidebar .nav-menu > li > a {
   font-size: 20px;
   line-height: 22px;
   padding: 10px 15px;
 }
-.article-right-sidebar .span8 .main-content {
+.article-right-sidebar .span8 .content {
   margin-right: -3.4%;
 }
-.article-right-sidebar .span9 .main-content {
-  margin-right: -3.5%;
-}
-.article-left-sidebar.article-right-sidebar .span8 .main-content {
-  margin-left: -4.1%;
+.article-right-sidebar .span9 .content {
   margin-right: -3.5%;
 }
 .hero-unit {
@@ -821,11 +815,11 @@ input.span1, textarea.span1, .uneditable-input.span1 {
   line-height: 26px;
   padding: 12px 15px;
 }
-.article-right-sidebar .span8 .main-content {
-  margin-right: -4%;
-}
-.article-left-sidebar.article-right-sidebar .span8 .main-content {
+.article-left-sidebar .span8 .content {
   margin-left: -3.9%;
+}
+.article-right-sidebar .span8 .content {
+  margin-right: -4%;
 }
 h2.teaser-title {
   font-size: 24px;

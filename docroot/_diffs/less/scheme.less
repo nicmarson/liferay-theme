@@ -11,10 +11,6 @@
     $SCAFFOLDING
 \*------------------------------------*/
 
-body {
-  #gradient > .vertical(@bodyTopColor, @bodyBackground);
-}
-
 
 /* Special grid styles
 -------------------------------------------------- */
@@ -234,6 +230,7 @@ select {
 \*------------------------------------*/
 
 #header {
+  
   .span-controls {
     border-top-color: @headerLinkBorder;
 
@@ -257,10 +254,8 @@ select {
   .search-toggle {
     border-right-color: @headerLinkBorder;
   }
-  .shopping-toggle-button {
-    .caret {
-      border-top-color: @brand;
-    }
+  .shopping-toggle-button .caret {
+    border-top-color: @brand;
   }
 }
 #footer {
@@ -272,35 +267,29 @@ select {
     $ARTICLE
 \*------------------------------------*/
 
-.article {
+article {
   #gradient > .vertical(@articleBackground, @articleBackgroundBottom);
 
-  .sidebar {
-
-    h3 {
-      background: @asideHeadingBackground;      
-      border-bottom-color: @asideHeadingBorder;
-      border-top-color: @asideHeadingBorder;
-    }
+  aside h3 {
+    background: @asideHeadingBackground;
+    border-bottom-color: @asideHeadingBorder;
+    border-top-color: @asideHeadingBorder;
   }
 }
 
 // Left Sidebar
-.article-left-sidebar {
+.article-left-sidebar aside {
 
-  .sidebar {
+  .nav-menu {
 
-    .nav > li > a {
-
-      &:hover {
-        color: @accent;
-      }
-    }
-    .nav > .active > a,
-    .nav > .active > a:hover {
+    ul > li > a:hover {
       color: @accent;
     }
-  }  
+    ul > .active > a,
+    ul > .active > a:hover {
+      color: @accent;
+    }
+  }
 }
 
 

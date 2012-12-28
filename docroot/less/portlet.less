@@ -2,37 +2,6 @@
     $PORTLET
 \*------------------------------------*/
 
-.portlet-boundary .portlet {
-  border: 2px solid @grayLighter;
-}
-
-.portlet-dropzone {
-  background-color: @grayLightest;
-}
-
-.portlet-topper {
-  background-color: @grayLightest;
-
-  .portlet-title {
-    color: #000;
-    font-family: @sansFontFamily;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 10px;
-  }
-  .portlet-title-text {
-    font-size: 13px;
-  }
-}
-
-.portlet-content {
-  background: #FFF;
-}
-
-.portlet:hover .portlet-topper {
-  background: @grayLighter;
-}
-
 .portlet-topper-toolbar {
   background-color: #FFF;
   padding: 0;
@@ -42,11 +11,10 @@
   a {
     display: block;
     float: left;
-    padding: 0 4px;
-    width: 16px;
+    padding-right: 4px;
 
     &:hover {
-      background: @grayLightest;
+      background-color: @grayLightest;
       text-decoration: none;
     }
     img {
@@ -59,7 +27,38 @@
   font-size: 11px;
   line-height: 16px;
 }
+.aui-menu-content,
 .aui-tab-content {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
+}
+
+.signed-in {
+
+  .portlet-boundary .portlet {
+    border: 2px solid @grayLighter;
+  }
+  .portlet-dropzone {
+    background-color: @grayLightest;
+  }
+  .portlet-topper {
+    background-color: @grayLightest;
+
+    .portlet-title {
+      color: #000;
+      font-family: @sansFontFamily;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px;
+    }
+    .portlet-title-text {
+      font-size: 13px;
+    }
+  }
+  .portlet-content {
+    background: #FFF;
+  }
+  .portlet:hover .portlet-topper {
+    background: @grayLighter;
+  }
 }
