@@ -49,52 +49,52 @@
 .form-personalize p {
   margin-bottom: 0;
 }
-.form-personalize .navbar .nav {
+.form-personalize .navbar .nav-menu ul {
   clear: none;
   margin-bottom: 0;
   padding-top: 60px;
 }
-.form-personalize .navbar .nav a,
-.form-personalize .navbar .nav button,
-.form-personalize .navbar .nav input {
+.form-personalize .navbar .nav-menu ul a,
+.form-personalize .navbar .nav-menu ul button,
+.form-personalize .navbar .nav-menu ul input {
   font-size: 18px;
   margin: 4px 0;
   padding: 7px 5px 8px;
 }
-.form-personalize .navbar .nav button {
+.form-personalize .navbar .nav-menu ul button {
   font-size: 16px;
   padding: 9px 6px;
 }
-.form-personalize .navbar .nav input,
-.form-personalize .navbar .nav .dropdown-toggle {
+.form-personalize .navbar .nav-menu ul input,
+.form-personalize .navbar .nav-menu ul .dropdown-toggle {
   margin-right: 5px;
 }
-.form-personalize .navbar .nav li {
+.form-personalize .navbar .nav-menu ul li {
   font-size: 30px;
   line-height: 40px;
 }
-.form-personalize .navbar .nav li.text {
+.form-personalize .navbar .nav-menu ul li.text {
   margin-right: 8px;
   width: 40px;
 }
-.form-personalize .navbar .nav li .dropdown-menu {
+.form-personalize .navbar .nav-menu ul li .dropdown-menu {
   margin-top: -3px;
   width: 225px;
 }
-.form-personalize .navbar .nav li .dropdown-menu a {
+.form-personalize .navbar .nav-menu ul li .dropdown-menu a {
   padding: 8px 10px 9px;
 }
-.form-personalize .navbar .nav input.search {
+.form-personalize .navbar .nav-menu ul input.search {
   width: 220px;
 }
-.form-personalize .navbar .nav input.zip {
+.form-personalize .navbar .nav-menu ul input.zip {
   width: 100px;
 }
-.form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
+.form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle {
   line-height: 20px;
   width: 215px;
 }
-.form-personalize .navbar .nav li.dropdown > .dropdown-toggle .caret {
+.form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle .caret {
   border-left-width: 6px;
   border-right-width: 6px;
   border-top-width: 6px;
@@ -139,6 +139,9 @@ article .content {
 .article-left-sidebar .sidebar .nav-menu {
   text-align: right;
 }
+.article-left-sidebar .sidebar .nav-menu li {
+  list-style: none;
+}
 .article-left-sidebar .sidebar .nav-menu ul > li > a {
   font-size: 16px;
   line-height: 18px;
@@ -176,11 +179,11 @@ h3.teaser-title {
 .hero-shopping .image {
   min-height: 360px;
 }
-.hero-shopping .nav > li > a {
+.hero-shopping .nav-menu ul > li > a {
   font-size: 24px;
   line-height: 24px;
 }
-.hero-shopping .nav > li > a small {
+.hero-shopping .nav-menu ul > li > a small {
   font-size: 18px;
 }
 .hero-shopping .hero-inner-title {
@@ -264,41 +267,41 @@ h3.teaser-title {
   padding-left: 10px;
   padding-right: 5px;
 }
-.form-personalize .navbar .nav {
+.form-personalize .navbar .nav-menu ul {
   padding-top: 40px;
 }
-.form-personalize .navbar .nav a,
-.form-personalize .navbar .nav button,
-.form-personalize .navbar .nav input {
+.form-personalize .navbar .nav-menu ul a,
+.form-personalize .navbar .nav-menu ul button,
+.form-personalize .navbar .nav-menu ul input {
   font-size: 20px;
   padding: 8px 7px 9px;
 }
-.form-personalize .navbar .nav input,
-.form-personalize .navbar .nav .dropdown-toggle {
+.form-personalize .navbar .nav-menu ul input,
+.form-personalize .navbar .nav-menu ul .dropdown-toggle {
   margin-right: 6px;
 }
-.form-personalize .navbar .nav button {
+.form-personalize .navbar .nav-menu ul button {
   font-size: 18px;
   padding: 9px 7px;
 }
-.form-personalize .navbar .nav li {
+.form-personalize .navbar .nav-menu ul li {
   font-size: 34px;
   line-height: 40px;
 }
-.form-personalize .navbar .nav li.text {
+.form-personalize .navbar .nav-menu ul li.text {
   margin-right: 10px;
   width: 48px;
 }
-.form-personalize .navbar .nav li .dropdown-menu {
+.form-personalize .navbar .nav-menu ul li .dropdown-menu {
   width: 259px;
 }
-.form-personalize .navbar .nav input.search {
+.form-personalize .navbar .nav-menu ul input.search {
   width: 300px;
 }
-.form-personalize .navbar .nav input.zip {
+.form-personalize .navbar .nav-menu ul input.zip {
   width: 125px;
 }
-.form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
+.form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle {
   width: 245px;
 }
 .article-left-sidebar .span8 .content {
@@ -308,7 +311,7 @@ h3.teaser-title {
 .article-left-sidebar .span9 .content {
   margin-left: -3.5%;
 }
-.article-left-sidebar .sidebar .nav-menu > li > a {
+.article-left-sidebar .sidebar .nav-menu ul > li > a {
   font-size: 20px;
   line-height: 22px;
   padding: 10px 15px;
@@ -758,49 +761,49 @@ input.span1, textarea.span1, .uneditable-input.span1 {
   padding-left: 22px;
   padding-right: 18px;
 }
-.form-personalize .navbar .nav {
+.form-personalize .navbar .nav-menu ul {
   padding-top: 55px;
 }
-.form-personalize .navbar .nav a,
-.form-personalize .navbar .nav button,
-.form-personalize .navbar .nav input {
+.form-personalize .navbar .nav-menu ul a,
+.form-personalize .navbar .nav-menu ul button,
+.form-personalize .navbar .nav-menu ul input {
   font-size: 22px;
   margin: 2px 0;
   padding: 11px 8px 12px;
 }
-.form-personalize .navbar .nav input,
-.form-personalize .navbar .nav .dropdown-toggle {
+.form-personalize .navbar .nav-menu ul input,
+.form-personalize .navbar .nav-menu ul .dropdown-toggle {
   margin-right: 8px;
 }
-.form-personalize .navbar .nav button {
+.form-personalize .navbar .nav-menu ul button {
   font-size: 20px;
   padding: 11px 9px;
 }
-.form-personalize .navbar .nav li {
+.form-personalize .navbar .nav-menu ul li {
   font-size: 46px;
   line-height: 40px;
 }
-.form-personalize .navbar .nav li.text {
+.form-personalize .navbar .nav-menu ul li.text {
   margin-right: 12px;
   width: 55px;
 }
-.form-personalize .navbar .nav li .dropdown-menu {
+.form-personalize .navbar .nav-menu ul li .dropdown-menu {
   margin-top: -1px;
   width: 296px;
 }
-.form-personalize .navbar .nav li .dropdown-menu a {
+.form-personalize .navbar .nav-menu ul li .dropdown-menu a {
   padding: 10px 10px 11px;
 }
-.form-personalize .navbar .nav input.search {
+.form-personalize .navbar .nav-menu ul input.search {
   width: 360px;
 }
-.form-personalize .navbar .nav input.zip {
+.form-personalize .navbar .nav-menu ul input.zip {
   width: 160px;
 }
-.form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
+.form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle {
   width: 280px;
 }
-.form-personalize .navbar .nav li.dropdown > .dropdown-toggle .caret {
+.form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle .caret {
   border-left-width: 8px;
   border-right-width: 8px;
   border-top-width: 8px;
@@ -810,7 +813,7 @@ input.span1, textarea.span1, .uneditable-input.span1 {
 .article-list > li {
   font-size: 18px;
 }
-.article-left-sidebar .sidebar .nav > li > a {
+.article-left-sidebar .sidebar .nav-menu ul > li > a {
   font-size: 24px;
   line-height: 26px;
   padding: 12px 15px;
@@ -850,7 +853,7 @@ h3.teaser-title {
 .hero-shopping .image {
   min-height: 375px;
 }
-.hero-shopping .nav > li > a {
+.hero-shopping .nav-menu ul > li > a {
   font-size: 24px;
   line-height: 24px;
 }

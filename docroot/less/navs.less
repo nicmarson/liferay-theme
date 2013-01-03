@@ -5,23 +5,27 @@
 // BASE CLASS
 // ----------
 
-.nav {
+.nav,
+.nav-menu ul {
   margin-left: 0;
   margin-bottom: @baseLineHeight;
   list-style: none;
 }
 
 // Make links block level
-.nav > li > a {
+.nav > li > a,
+.nav-menu ul > li > a {
   display: block;
 }
-.nav > li > a:hover {
+.nav > li > a:hover,
+.nav-menu ul > li > a:hover {
   text-decoration: none;
   .transition(all .2s ease-in-out);
 }
 
 // Redeclare pull classes because of specifity
-.nav > .pull-right {
+.nav > .pull-right,
+.nav-menu ul > .pull-right {
   float: right;
 }
 
@@ -37,7 +41,8 @@
   text-transform: uppercase;
 }
 // Space them out when they follow another list item (link)
-.nav li + .nav-header {
+.nav li + .nav-header,
+.nav-menu ul li + .nav-header {
   margin-top: 9px;
 }
 

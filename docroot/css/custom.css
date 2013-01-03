@@ -2633,22 +2633,26 @@ h4.alert-heading {
 /*------------------------------------*\
     $NAVS
 \*------------------------------------*/
-.nav {
+.nav,
+.nav-menu ul {
   margin-left: 0;
   margin-bottom: 20px;
   list-style: none;
 }
-.nav > li > a {
+.nav > li > a,
+.nav-menu ul > li > a {
   display: block;
 }
-.nav > li > a:hover {
+.nav > li > a:hover,
+.nav-menu ul > li > a:hover {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.nav > .pull-right {
+.nav > .pull-right,
+.nav-menu ul > .pull-right {
   float: right;
 }
 .nav-header {
@@ -2661,7 +2665,8 @@ h4.alert-heading {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
-.nav li + .nav-header {
+.nav li + .nav-header,
+.nav-menu ul li + .nav-header {
   margin-top: 9px;
 }
 .nav-list {
@@ -5952,6 +5957,21 @@ img.leadership-photo {
   top: 0;
 }
 /*------------------------------------*\
+    $AUI
+\*------------------------------------*/
+.aui-tabview-list {
+  font-size: 11px;
+  line-height: 16px;
+}
+.aui-menu-content,
+.aui-tab-content {
+  font-size: 13px;
+  line-height: 16px;
+}
+.aui-field-label-right {
+  float: left;
+}
+/*------------------------------------*\
     $PORTLET
 \*------------------------------------*/
 .portlet-topper-toolbar {
@@ -5971,15 +5991,6 @@ img.leadership-photo {
 }
 .portlet-topper-toolbar a img {
   vertical-align: inherit;
-}
-.aui-tabview-list {
-  font-size: 11px;
-  line-height: 16px;
-}
-.aui-menu-content,
-.aui-tab-content {
-  font-size: 13px;
-  line-height: 16px;
 }
 .signed-in .portlet-boundary .portlet {
   border: 2px solid #e9e9e9;
@@ -6543,52 +6554,52 @@ table.contact-info td.contact-info-entry {
   .form-personalize p {
     margin-bottom: 0;
   }
-  .form-personalize .navbar .nav {
+  .form-personalize .navbar .nav-menu ul {
     clear: none;
     margin-bottom: 0;
     padding-top: 60px;
   }
-  .form-personalize .navbar .nav a,
-  .form-personalize .navbar .nav button,
-  .form-personalize .navbar .nav input {
+  .form-personalize .navbar .nav-menu ul a,
+  .form-personalize .navbar .nav-menu ul button,
+  .form-personalize .navbar .nav-menu ul input {
     font-size: 18px;
     margin: 4px 0;
     padding: 7px 5px 8px;
   }
-  .form-personalize .navbar .nav button {
+  .form-personalize .navbar .nav-menu ul button {
     font-size: 16px;
     padding: 9px 6px;
   }
-  .form-personalize .navbar .nav input,
-  .form-personalize .navbar .nav .dropdown-toggle {
+  .form-personalize .navbar .nav-menu ul input,
+  .form-personalize .navbar .nav-menu ul .dropdown-toggle {
     margin-right: 5px;
   }
-  .form-personalize .navbar .nav li {
+  .form-personalize .navbar .nav-menu ul li {
     font-size: 30px;
     line-height: 40px;
   }
-  .form-personalize .navbar .nav li.text {
+  .form-personalize .navbar .nav-menu ul li.text {
     margin-right: 8px;
     width: 40px;
   }
-  .form-personalize .navbar .nav li .dropdown-menu {
+  .form-personalize .navbar .nav-menu ul li .dropdown-menu {
     margin-top: -3px;
     width: 225px;
   }
-  .form-personalize .navbar .nav li .dropdown-menu a {
+  .form-personalize .navbar .nav-menu ul li .dropdown-menu a {
     padding: 8px 10px 9px;
   }
-  .form-personalize .navbar .nav input.search {
+  .form-personalize .navbar .nav-menu ul input.search {
     width: 220px;
   }
-  .form-personalize .navbar .nav input.zip {
+  .form-personalize .navbar .nav-menu ul input.zip {
     width: 100px;
   }
-  .form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
+  .form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle {
     line-height: 20px;
     width: 215px;
   }
-  .form-personalize .navbar .nav li.dropdown > .dropdown-toggle .caret {
+  .form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle .caret {
     border-left-width: 6px;
     border-right-width: 6px;
     border-top-width: 6px;
@@ -6633,6 +6644,9 @@ table.contact-info td.contact-info-entry {
   .article-left-sidebar .sidebar .nav-menu {
     text-align: right;
   }
+  .article-left-sidebar .sidebar .nav-menu li {
+    list-style: none;
+  }
   .article-left-sidebar .sidebar .nav-menu ul > li > a {
     font-size: 16px;
     line-height: 18px;
@@ -6670,11 +6684,11 @@ table.contact-info td.contact-info-entry {
   .hero-shopping .image {
     min-height: 360px;
   }
-  .hero-shopping .nav > li > a {
+  .hero-shopping .nav-menu ul > li > a {
     font-size: 24px;
     line-height: 24px;
   }
-  .hero-shopping .nav > li > a small {
+  .hero-shopping .nav-menu ul > li > a small {
     font-size: 18px;
   }
   .hero-shopping .hero-inner-title {
@@ -7803,41 +7817,41 @@ table.contact-info td.contact-info-entry {
     padding-left: 10px;
     padding-right: 5px;
   }
-  .form-personalize .navbar .nav {
+  .form-personalize .navbar .nav-menu ul {
     padding-top: 40px;
   }
-  .form-personalize .navbar .nav a,
-  .form-personalize .navbar .nav button,
-  .form-personalize .navbar .nav input {
+  .form-personalize .navbar .nav-menu ul a,
+  .form-personalize .navbar .nav-menu ul button,
+  .form-personalize .navbar .nav-menu ul input {
     font-size: 20px;
     padding: 8px 7px 9px;
   }
-  .form-personalize .navbar .nav input,
-  .form-personalize .navbar .nav .dropdown-toggle {
+  .form-personalize .navbar .nav-menu ul input,
+  .form-personalize .navbar .nav-menu ul .dropdown-toggle {
     margin-right: 6px;
   }
-  .form-personalize .navbar .nav button {
+  .form-personalize .navbar .nav-menu ul button {
     font-size: 18px;
     padding: 9px 7px;
   }
-  .form-personalize .navbar .nav li {
+  .form-personalize .navbar .nav-menu ul li {
     font-size: 34px;
     line-height: 40px;
   }
-  .form-personalize .navbar .nav li.text {
+  .form-personalize .navbar .nav-menu ul li.text {
     margin-right: 10px;
     width: 48px;
   }
-  .form-personalize .navbar .nav li .dropdown-menu {
+  .form-personalize .navbar .nav-menu ul li .dropdown-menu {
     width: 259px;
   }
-  .form-personalize .navbar .nav input.search {
+  .form-personalize .navbar .nav-menu ul input.search {
     width: 300px;
   }
-  .form-personalize .navbar .nav input.zip {
+  .form-personalize .navbar .nav-menu ul input.zip {
     width: 125px;
   }
-  .form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
+  .form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle {
     width: 245px;
   }
   .article-left-sidebar .span8 .content {
@@ -7847,7 +7861,7 @@ table.contact-info td.contact-info-entry {
   .article-left-sidebar .span9 .content {
     margin-left: -3.5%;
   }
-  .article-left-sidebar .sidebar .nav-menu > li > a {
+  .article-left-sidebar .sidebar .nav-menu ul > li > a {
     font-size: 20px;
     line-height: 22px;
     padding: 10px 15px;
@@ -9027,49 +9041,49 @@ table.contact-info td.contact-info-entry {
     padding-left: 22px;
     padding-right: 18px;
   }
-  .form-personalize .navbar .nav {
+  .form-personalize .navbar .nav-menu ul {
     padding-top: 55px;
   }
-  .form-personalize .navbar .nav a,
-  .form-personalize .navbar .nav button,
-  .form-personalize .navbar .nav input {
+  .form-personalize .navbar .nav-menu ul a,
+  .form-personalize .navbar .nav-menu ul button,
+  .form-personalize .navbar .nav-menu ul input {
     font-size: 22px;
     margin: 2px 0;
     padding: 11px 8px 12px;
   }
-  .form-personalize .navbar .nav input,
-  .form-personalize .navbar .nav .dropdown-toggle {
+  .form-personalize .navbar .nav-menu ul input,
+  .form-personalize .navbar .nav-menu ul .dropdown-toggle {
     margin-right: 8px;
   }
-  .form-personalize .navbar .nav button {
+  .form-personalize .navbar .nav-menu ul button {
     font-size: 20px;
     padding: 11px 9px;
   }
-  .form-personalize .navbar .nav li {
+  .form-personalize .navbar .nav-menu ul li {
     font-size: 46px;
     line-height: 40px;
   }
-  .form-personalize .navbar .nav li.text {
+  .form-personalize .navbar .nav-menu ul li.text {
     margin-right: 12px;
     width: 55px;
   }
-  .form-personalize .navbar .nav li .dropdown-menu {
+  .form-personalize .navbar .nav-menu ul li .dropdown-menu {
     margin-top: -1px;
     width: 296px;
   }
-  .form-personalize .navbar .nav li .dropdown-menu a {
+  .form-personalize .navbar .nav-menu ul li .dropdown-menu a {
     padding: 10px 10px 11px;
   }
-  .form-personalize .navbar .nav input.search {
+  .form-personalize .navbar .nav-menu ul input.search {
     width: 360px;
   }
-  .form-personalize .navbar .nav input.zip {
+  .form-personalize .navbar .nav-menu ul input.zip {
     width: 160px;
   }
-  .form-personalize .navbar .nav li.dropdown > .dropdown-toggle {
+  .form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle {
     width: 280px;
   }
-  .form-personalize .navbar .nav li.dropdown > .dropdown-toggle .caret {
+  .form-personalize .navbar .nav-menu ul li.dropdown > .dropdown-toggle .caret {
     border-left-width: 8px;
     border-right-width: 8px;
     border-top-width: 8px;
@@ -9079,7 +9093,7 @@ table.contact-info td.contact-info-entry {
   .article-list > li {
     font-size: 18px;
   }
-  .article-left-sidebar .sidebar .nav > li > a {
+  .article-left-sidebar .sidebar .nav-menu ul > li > a {
     font-size: 24px;
     line-height: 26px;
     padding: 12px 15px;
@@ -9119,7 +9133,7 @@ table.contact-info td.contact-info-entry {
   .hero-shopping .image {
     min-height: 375px;
   }
-  .hero-shopping .nav > li > a {
+  .hero-shopping .nav-menu ul > li > a {
     font-size: 24px;
     line-height: 24px;
   }
