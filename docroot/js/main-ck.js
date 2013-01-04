@@ -1,0 +1,1 @@
+AUI().ready(function(){});Liferay.Portlet.ready(function(e,t){});Liferay.on("allPortletsReady",function(){});
