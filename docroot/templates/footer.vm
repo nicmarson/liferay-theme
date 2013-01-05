@@ -7,7 +7,9 @@
       <nav class="span6">
         <ul class="nav nav-inverted nav-pills pull-right">
           #if (!$is_signed_in)
-            <li><a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a></li>
+            <li><a href="$sign_in_url" rel="nofollow">$sign_in_text</a></li>
+          #else
+            <li><a href="$sign_out_url" rel="nofollow">$sign_out_text</a></li>
           #end
           <li><a href="/legal/online-privacy-and-security/">Privacy</a></li>
           <li><a href="/legal/terms-of-use/">Terms of Use</a></li>

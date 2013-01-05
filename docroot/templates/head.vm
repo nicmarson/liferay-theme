@@ -19,3 +19,5 @@ var oo_feedback = new OOo.Ocode({});
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script type="text/javascript" src="$javascript_folder/lte-ie7.js"></script>
 <![endif]-->
+
+<link rel="shortcut icon" href="$images_folder/favicon.ico">
