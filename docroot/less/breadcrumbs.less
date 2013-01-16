@@ -2,38 +2,41 @@
     $BREADCRUMBS
 \*------------------------------------*/
 
-
 .breadcrumbs {
   list-style: none;
-
-  > .active {
+  
+  a {
+    display: block;
+  }
+  li {
+    display: inline-block;
+    .ie7-inline-block();
+  }
+  .active {
     color: @gray;
+  }
+  .divider {
+    padding: 0 5px;
+    color: @grayLight;
+  }
+  .last {
+    background-image: none;
   }
 }
 
 .breadcrumbs-horizontal {
 
-  > li {
-    display: inline-block;
-    .ie7-inline-block();
-
-    span:after {
-      color: @grayLight;
-      content: "/";
-      padding: 0 5px;
-    }
+  li {
+    background: url(../images/arrows/05_right.png) no-repeat 100% 50%;
+    margin-right: 5px;
+    max-width: 50%;
+    padding-right: 15px;
   }
   .last {
+    margin-top: 0.2em;
+
     a {
       color: @gray;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    span:after {
-      content: "";
-      padding: 0;
     }
   }
 }
@@ -41,7 +44,6 @@
 .breadcrumbs-vertical {
 
   a {
-    display: block;
     text-align: center;
     text-decoration: none;
   }

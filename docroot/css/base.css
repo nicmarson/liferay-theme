@@ -678,21 +678,17 @@ ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
-ul.bulleted li,
-.journal-content-article ul li {
+ul.bulleted li {
   margin: 10px 0;
 }
-ul.bulleted > li,
-.journal-content-article ul > li {
+ul.bulleted > li {
   list-style: square;
 }
-.generatedcontent ul.bulleted > li,
-.generatedcontent .journal-content-article ul > li {
+.generatedcontent ul.bulleted > li {
   list-style: none;
   position: relative;
 }
-.generatedcontent ul.bulleted > li:before,
-.generatedcontent .journal-content-article ul > li:before {
+.generatedcontent ul.bulleted > li:before {
   background-color: #ca5400;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;

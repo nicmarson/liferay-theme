@@ -151,23 +151,19 @@ ol.unstyled {
 }
 
 // Orange Square Bullets
-ul.bulleted li,
-.journal-content-article ul li {
+ul.bulleted li {
   margin: @baseLineHeight / 2 0;
 }
-ul.bulleted > li,
-.journal-content-article ul > li {
+ul.bulleted > li {
   list-style: square;
 }
 .generatedcontent {
 
-  ul.bulleted > li,
-  .journal-content-article ul > li {
+  ul.bulleted > li {
     list-style: none;
     position: relative;
   }
-  ul.bulleted > li:before,
-  .journal-content-article ul > li:before {
+  ul.bulleted > li:before {
     background-color: @bulletBackground;
     .border-radius(2px);
     content: "";

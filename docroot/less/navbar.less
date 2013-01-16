@@ -13,7 +13,6 @@
 // Base class and wrapper
 .navbar {
   overflow: visible;
-  margin-bottom: @baseLineHeight;
 
   // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
   *position: relative;
@@ -23,13 +22,13 @@
 // Inner for background effects
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
-  min-height: @navbarHeight;
-  padding-left:  20px;
-  padding-right: 20px;
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
   border: 1px solid @navbarBorder;
   .border-radius(@baseBorderRadius);
   .box-shadow(0 1px 4px rgba(0,0,0,.065));
+  min-height: @navbarHeight;
+  padding-left:  20px;
+  padding-right: 20px;
 
   // Prevent floats from breaking the navbar
   .clearfix();
@@ -50,7 +49,8 @@
 
 // Brand: website or project name
 // -------------------------
-.navbar .brand {
+.navbar .brand,
+.navbar .portlet-title {
   float: left;
   display: block;
   // Vertically center the text given @navbarHeight
@@ -239,7 +239,9 @@
 }
 
 // Links
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+.navbar .nav > li > .link {
+  display: block;
   float: none;
   // Vertically center the text given @navbarHeight
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
@@ -254,7 +256,9 @@
 
 // Hover
 .navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover,
+.navbar .nav > li > .link:focus,
+.navbar .nav > li > .link:hover {
   background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
   color: @navbarLinkColorHover;
   text-decoration: none;
