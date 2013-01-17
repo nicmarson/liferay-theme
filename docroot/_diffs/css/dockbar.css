@@ -53,14 +53,14 @@
   border-width: 0;
 }
 .dockbar {
-  background-color: #fafafa;
-  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
-  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
-  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #ffffff, #e0e0e0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e0e0e0));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
+  background-image: -o-linear-gradient(top, #ffffff, #e0e0e0);
+  background-image: linear-gradient(to bottom, #ffffff, #e0e0e0);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
   border-bottom: 1px solid #636364;
   font-size: 13px;
   padding: 1px 5px;

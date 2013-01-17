@@ -206,37 +206,107 @@
 // -------------------------
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
-
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBackground:                darken(@navbarBackgroundHighlight, 12%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
-
 @navbarText:                      #777;
 @navbarLinkColor:                 #777;
 @navbarLinkColorHover:            @grayDark;
 @navbarLinkColorActive:           @gray;
-@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundHover:       #ffffff;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
-
 @navbarBrandColor:                @navbarLinkColor;
+
 
 // Inverted navbar
 @navbarInverseBackground:                #111111;
 @navbarInverseBackgroundHighlight:       #222222;
 @navbarInverseBorder:                    #252525;
-
 @navbarInverseText:                      @grayLight;
 @navbarInverseLinkColor:                 @grayLight;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
 @navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
-
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
 @navbarInverseSearchBorder:              @navbarInverseBackground;
 @navbarInverseSearchPlaceholderColor:    #ccc;
-
 @navbarInverseBrandColor:                @navbarInverseLinkColor;
+
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownDividerTop:            #e5e5e5;
+@dropdownDividerBottom:         @white;
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+@dropdownLinkColorActive:       @dropdownLinkColor;
+@dropdownLinkBackgroundActive:  @linkColor;
+
+
+// Article
+// -------------------------
+@asideHeadingColor:             #7D99A8;
+
+
+// Wells
+// -------------------------
+@wellBackground:                #f5f5f5;
+
+
+// Tooltips and popovers
+// -------------------------
+@tooltipColor:                  #fff;
+@tooltipBackground:             #000;
+@tooltipArrowWidth:             6px;
+@tooltipArrowColor:             @tooltipBackground;
+@popoverBackground:             #fff;
+@popoverArrowWidth:             12px;
+@popoverArrowColor:             #fff;
+@popoverTitleBackground:        darken(@popoverBackground, 3%);
+
+// Special enhancement for popovers
+@popoverArrowOuterWidth:        @popoverArrowWidth + 1;
+@popoverArrowOuterColor:        rgba(0,0,0,.25);
+
+
+// Header
+// -------------------------
+@headerHeight:                  90px;
+@headerText:                    @gray;
+@headerLinkColor:               @gray;
+@headerLinkColorHover:          @white;
+
+
+// Nav Inverted
+// -------------------------
+@navInvertedText:               @white;
+@navInvertedLinkColor:          @white;
+@navInvertedLinkColorHover:     lighten(@orange, 40%);
+@navInvertedLinkColorActive:    lighten(@orange, 20%);
+
+
+// Pagination
+// -------------------------
+@paginationBackground:          #fff;
+@paginationBorder:              #ddd;
+@paginationActiveBackground:    #f5f5f5;
+
+
+// Hero unit
+// -------------------------
+@heroUnitBackground:            @grayLighter;
+@heroUnitHeadingColor:          inherit;
+@heroUnitLeadColor:             inherit;
+
+
+// Contact
+// -------------------------
+@contactPhoneBackground:        #66A131;
+@contactEmailBackground:        @purple;
 

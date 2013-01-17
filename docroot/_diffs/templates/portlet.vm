@@ -13,11 +13,11 @@
           #if ($portlet_display.isShowBackIcon())
             <li><a class="portlet-icon-back" href="$portlet_back_url">#language("return-to-full-page")</a></li>
           #else
-            <li><span class="link">$theme.iconOptions()</a></li>
+            <li>$theme.iconOptions()</li>
             <li class="divider-vertical"></li>
-            <li><span class="link">$theme.iconMinimize()</a></li>
-            <li><span class="link">$theme.iconMaximize()</a></li>
-            <li><span class="link">$theme.iconClose()</a></li>
+            <li>$theme.iconMinimize()</li>
+            <li>$theme.iconMaximize()</li>
+            <li>$theme.iconClose()</li>
           #end
         </ul>
       </menu>

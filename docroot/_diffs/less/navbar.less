@@ -23,8 +23,6 @@
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  border: 1px solid @navbarBorder;
-  .border-radius(@baseBorderRadius);
   .box-shadow(0 1px 4px rgba(0,0,0,.065));
   min-height: @navbarHeight;
   padding-left:  20px;
@@ -49,17 +47,17 @@
 
 // Brand: website or project name
 // -------------------------
-.navbar .brand,
-.navbar .portlet-title {
-  float: left;
-  display: block;
-  // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
-  margin-left: -20px; // negative indent to left-align the text down the page
-  font-size: 20px;
-  font-weight: 200;
+.navbar .brand {
   color: @navbarBrandColor;
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-left: -20px;
+  padding: 10px 20px;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+
   &:hover {
     text-decoration: none;
   }
@@ -77,6 +75,7 @@
 // -------------------------
 .navbar-link {
   color: @navbarLinkColor;
+
   &:hover {
     color: @navbarLinkColorHover;
   }
@@ -85,10 +84,10 @@
 // Dividers in navbar
 // -------------------------
 .navbar .divider-vertical {
-  height: @navbarHeight;
-  margin: 0 9px;
   border-left: 1px solid @navbarBackground;
   border-right: 1px solid @navbarBackgroundHighlight;
+  height: @navbarHeight;
+  margin: 0 9px;
 }
 
 // Buttons in navbar
@@ -97,6 +96,7 @@
 .navbar .btn-group {
   .navbarVerticalAlign(30px); // Vertically center in navbar
 }
+
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
 .navbar .input-append .btn {
@@ -239,51 +239,47 @@
 }
 
 // Links
-.navbar .nav > li > a,
-.navbar .nav > li > .link {
+.navbar .nav > li a {
+  background-color: transparent;
+  color: @navbarLinkColor;
   display: block;
   float: none;
-  // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
-  color: @navbarLinkColor;
+  padding: 10px;
   text-decoration: none;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
-
 }
 
 // Hover
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover,
-.navbar .nav > li > .link:focus,
-.navbar .nav > li > .link:hover {
-  background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
+.navbar .nav > li a:focus,
+.navbar .nav > li a:hover {
+  background-color: #FFF;
   color: @navbarLinkColorHover;
   text-decoration: none;
 }
 
 // Active nav items
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus {
-  color: @navbarLinkColorActive;
-  text-decoration: none;
+.navbar .nav > .active a,
+.navbar .nav > .active a:hover,
+.navbar .nav > .active a:focus {
   background-color: @navbarLinkBackgroundActive;
   .box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+  color: @navbarLinkColorActive;
+  text-decoration: none;
 }
 
 // Navbar button for toggling navbar items in responsive layouts
 // These definitions need to come after '.navbar .btn'
 .navbar .btn-navbar {
+  .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
+  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
   display: none;
   float: right;
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  .buttonBackground(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
-  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
 }
 .navbar .btn-navbar .icon-bar {
   display: block;
