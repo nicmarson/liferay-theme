@@ -32,38 +32,19 @@
 .portlet-column-content.empty {
   padding: 50px;
 }
-#main-content.dragging .portlet-column {
+#main-content.aui-dragging .portlet-column {
   border: 3px double #828F95;
   height: 100px;
   min-height: 100px;
 }
-.ie6 div.portlet-layout,
-.ie7 div.portlet-layout {
-  height: 1%;
+.portlet-boundary .portlet {
+  border: 2px solid #1e9442;
 }
-.ie6 div.portlet-column,
-.ie7 div.portlet-column {
-  float: left;
-  overflow: hidden;
-  width: 100%;
+.portlet-dropzone {
+  background-color: #e9e9e9;
 }
-.ie6 div.aui-column-last,
-.ie7 div.aui-column-last {
-  margin-right: -1px;
-}
-.ie6 .portlet-column-content,
-.ie7 .portlet-column-content {
-  zoom: 1;
-}
-/* ---------- Signed In ---------- */
-.signed-in .portlet-boundary .portlet {
-  border: 2px solid #e9e9e9;
-}
-.signed-in .portlet-dropzone {
-  background-color: #f8f8f8;
-}
-.signed-in .portlet:hover .portlet-topper {
-  background: #e9e9e9;
+.portlet:hover .portlet-topper {
+  background: #999999;
 }
 /* ---------- Portlet wrapper and icons ---------- */
 .freeform .portlet {

@@ -1,0 +1,22 @@
+<footer id="footer" role="contentinfo">
+  <div class="row-fluid">
+    <div class="container">
+      <div class="span6">
+        <p>&copy; 2012 Regence <!-- BlueCross BlueShield of Oregon. All rights reserved. --></p>
+      </div>
+      <nav class="span6">
+        <ul class="nav nav-inverted nav-pills pull-right">
+          #if (!$is_signed_in)
+            <li><a href="$sign_in_url" rel="nofollow">$sign_in_text</a></li>
+          #else
+            <li><a href="$sign_out_url" rel="nofollow">$sign_out_text</a></li>
+          #end
+          <li><a href="/legal/online-privacy-and-security/">Privacy</a></li>
+          <li><a href="/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="javascript:void(0);" onClick="oo_feedback.show()"><span class="icon-feedback" aria-hidden="true"><b></b><i></i></span> Feedback</a></li>
+          getEspanol()
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

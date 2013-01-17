@@ -3868,39 +3868,33 @@ ul.nav-stacked > li {
 .breadcrumbs {
   list-style: none;
 }
-.breadcrumbs a {
-  display: block;
+.breadcrumbs > .active {
+  color: #666666;
 }
-.breadcrumbs li {
+.breadcrumbs-horizontal > li {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
   *zoom: 1;
 }
-.breadcrumbs .active {
-  color: #666666;
-}
-.breadcrumbs .divider {
-  padding: 0 5px;
+.breadcrumbs-horizontal > li span:after {
   color: #999999;
-}
-.breadcrumbs .last {
-  background-image: none;
-}
-.breadcrumbs-horizontal li {
-  background: url(../images/arrows/05_right.png) no-repeat 100% 50%;
-  margin-right: 5px;
-  max-width: 50%;
-  padding-right: 15px;
-}
-.breadcrumbs-horizontal .last {
-  margin-top: 0.2em;
+  content: "/";
+  padding: 0 5px;
 }
 .breadcrumbs-horizontal .last a {
   color: #666666;
 }
+.breadcrumbs-horizontal .last a:hover {
+  text-decoration: none;
+}
+.breadcrumbs-horizontal .last span:after {
+  content: "";
+  padding: 0;
+}
 .breadcrumbs-vertical a {
+  display: block;
   text-align: center;
   text-decoration: none;
 }

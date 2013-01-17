@@ -10,35 +10,8 @@
 
 <head>
   <title>$the_title - $company_name</title>
-
-  <!-- Web Fonts -->
-  <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
-
   $theme.include($top_head_include)
-  #if ($is_signed_in)
-    #css ("$css_folder/portal.css")
-  #end
-
-  <!-- Pre DOM-Ready scripts -->
-  <script type="text/javascript" src="$javascript_folder/modernizr.js"></script>
-  <script>
-  if( !window.html5 ){ window.html5 = {}; } window.html5.shivMethods = false;
-  </script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript" src="$javascript_folder/mousepress.js"></script>
-  <script type="text/javascript" src="$javascript_folder/polyfiller.js"></script>
-  <script type="text/javascript" src="$javascript_folder/polyfills.js"></script>
-  <script type="text/javascript" src="$javascript_folder/oo_engine.min.js"></script>
-  <script>
-  var oo_feedback = new OOo.Ocode({});
-</script>
-
-<!--[if lte IE 7]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script type="text/javascript" src="$javascript_folder/lte-ie7.js"></script>
-<![endif]-->
-
-<link rel="shortcut icon" href="$images_folder/favicon.ico">
+  #parse ("$full_templates_path/head.vm")  
 </head>
 
 <body class="$css_class">
