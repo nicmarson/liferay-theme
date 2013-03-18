@@ -1,0 +1,163 @@
+//
+// Custom typography
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('@{fontDirectory}/icomoon.eot');
+  src:url('@{fontDirectory}/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('@{fontDirectory}/icomoon.svg#icomoon') format('svg'),
+    url('@{fontDirectory}/icomoon.woff') format('woff'),
+    url('@{fontDirectory}/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Links
+// -------------------------
+
+a {
+  color: @linkColor;
+}
+a:hover,
+a:focus {
+  color: @linkColorHover;
+}
+
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-family: @headingsFontFamily;
+  font-weight: 700;
+}
+
+.fontface { // If web fonts are supported
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: @headingsFontWeight;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: @sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
+  text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
+}
+
+
+// Headers
+// -------------------------
+.page-header,
+.section-header {
+
+   h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+.page-header {
+  margin: @baseLineHeight 0 (@baseLineHeight * 1.5);
+}
+.section-header {
+  background: #EAEFF1;
+  border-top: 1px solid #E0E3E4;
+  margin: @baseLineHeight 0 (@baseLineHeight * 1.5);
+  padding: @baseLineHeight/2 15px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: @orange;
+  }
+}
+
+
+// Lists
+// -------------------------
+
+// Orange Square Bullets
+ul.bulleted li {
+  margin: @baseLineHeight / 2 0;
+}
+ul.bulleted > li {
+  list-style: square;
+}
+.generatedcontent {
+
+  ul.bulleted > li {
+    list-style: none;
+    position: relative;
+  }
+  ul.bulleted > li:before {
+    background: @bulletBackground;
+    .border-radius(2px);
+    content: "";
+    height: 8px;
+    left: -(@listIndent);
+    position: absolute;
+    top: @baseFontSize / 2;
+    width: 8px;
+  }
+}
+
+// Components
+// -------------------------
+
+.alert {
+  background-color: transparent;
+}
+.dropdown-menu {
+  color: @black;
+}
+.well-clear {
+  background-color: transparent;
+}
+
+// Buttons
+.btn-link {
+  padding-left: 0;
+  padding-right: 0;
+
+  .caret {
+    border-top-color: @linkColor;
+  }
+  &:hover .caret {
+    border-top-color: @linkColorHover;
+  }
+}
+.btn-block {
+  padding-left: 15px;
+  text-align: left;
+}
+
+
+// Modals
+.modal {
+  color: @gray;
+  width: 515px;
+
+  form {
+    margin: 0;
+  }
+}
+.modal-header {
+  padding: 10px 15px;
+
+  h3 {
+    color: @brand;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+.modal-body {
+  padding: 20px 15px 15px;
+}
+.modal-footer {
+  padding: 19px 15px 20px;
+}
+
+
+// Images
+figcaption {
+  padding: 5px 1px;
+}
+
+

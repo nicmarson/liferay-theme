@@ -9,87 +9,68 @@
 <html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
 
 <head>
-  <title>$the_title - $company_name</title>
+    <title>$the_title - $company_name</title>
 
-  <!-- Web Fonts -->
-  <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+    <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
 
-  $theme.include($top_head_include)
-  #if ($is_signed_in)
-    #css ("$css_folder/portal.css")
-  #end
+    $theme.include($top_head_include)
+    #if ($is_signed_in)
+        #css ("$css_folder/portal.css")
+    #end
 
-  <!-- Pre DOM-Ready scripts -->
-  <script type="text/javascript" src="$javascript_folder/modernizr.js"></script>
-  <script>
-  if( !window.html5 ){ window.html5 = {}; } window.html5.shivMethods = false;
-  </script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript" src="$javascript_folder/mousepress.js"></script>
-  <script type="text/javascript" src="$javascript_folder/polyfiller.js"></script>
-  <script type="text/javascript" src="$javascript_folder/polyfills.js"></script>
-  <script type="text/javascript" src="$javascript_folder/oo_engine.min.js"></script>
-  <script>
-  var oo_feedback = new OOo.Ocode({});
-</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="$javascript_folder/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="$javascript_folder/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-<!--[if lte IE 7]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script type="text/javascript" src="$javascript_folder/lte-ie7.js"></script>
-<![endif]-->
-
-<link rel="shortcut icon" href="$images_folder/favicon.ico">
+    <link rel="shortcut icon" href="$images_folder/favicon.ico">
 </head>
 
 <body class="$css_class">
+    
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-  $theme.include($body_top_include)
+    $theme.include($body_top_include)
 
-  #if ($is_signed_in)
-    #dockbar()
-  #end
+    #if ($is_signed_in)
+        #dockbar()
+    #end
 
-  <a class="invisible" href="#main-content" id="skip-to-content" style="position:absolute;">#language("skip-to-content")</a>
+    <a class="invisible" href="#main-content" id="skip-to-content" style="position:absolute;">#language("skip-to-content")</a>
 
-  #parse ("$full_templates_path/header.vm")
-  #parse ("$full_templates_path/header_first.vm")
-  
-  <div class="container" id="main-content" role="main">
-    <div class="page-header">
-      <h1>$the_title</h1>
-    </div>
-  #if ($selectable)
-    $theme.include($content_include)
-  #else
-    $portletDisplay.recycle()
-    $portletDisplay.setTitle($the_title)
-    $theme.wrapPortlet("portlet.vm", $content_include)
-  #end
-  </div> <!-- (main) /container -->
+    #parse ("$full_templates_path/header.vm")
 
-  <!--[if lte IE 8]>
-  <hr/>
-  <div class="row-fluid">
-    <div class="alert alert-block fade in">
-      <button data-dismiss="alert" class="close" type="button">×</button>
-      <h4 class="alert-heading">You're using an old version of Internet Explorer</h4>
-      <p>We've designed this site to work best with the latest versions of Internet Explorer, Safari, Firefox, Chrome and Opera. Consider upgrading your browser to the latest version for enhanced functionality and improved security.</p>
-    </div>
-  </div>
-  <![endif]-->
+    <!-- Masthead
+    ================================================== -->
+    <header class="jumbotron subhead">
+        <div class="container">
+            <h1 class="mega">$the_title</h1>
+        </div>
+    </header>
+    
+    <div class="container" role="main">
+    #if ($selectable)
+        $theme.include($content_include)
+    #else
+        $portletDisplay.recycle()
+        $portletDisplay.setTitle($the_title)
+        $theme.wrapPortlet("portlet.vm", $content_include)
+    #end
 
-  #if ($has_navigation || $is_signed_in)
-    #parse ("$full_templates_path/navigation_primary.vm")
-    #parse ("$full_templates_path/navigation_secondary.vm")
-  #end
+    #if ($has_navigation || $is_signed_in)
+        #parse ("$full_templates_path/navigation_information.vm")
+    #end
 
-  #parse ("$full_templates_path/footer.vm")
+    #parse ("$full_templates_path/navigation_utility.vm")
+    </div> <!-- (main) /container -->
+    #parse ("$full_templates_path/footer.vm")
 
-  $theme.include($body_bottom_include)  
-  
-  <script type="text/javascript" src="$javascript_folder/bootstrap.min.js"></script>
-  <script type="text/javascript" src="$javascript_folder/plugins.js"></script>
-  <script type="text/javascript" src="$javascript_folder/script.js"></script>
+    $theme.include($body_bottom_include)  
+    
+    <script type="text/javascript" src="$javascript_folder/bootstrap.min.js"></script>
+    <script type="text/javascript" src="$javascript_folder/plugins.js"></script>
+    <script type="text/javascript" src="$javascript_folder/script.js"></script>
 
 </body>
 

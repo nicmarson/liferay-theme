@@ -1,0 +1,315 @@
+//
+// Custom navigation
+// --------------------------------------------------
+
+
+// Breadcrumb
+.breadcrumb {
+  padding: 8px 0;
+  margin: @baseLineHeight 0 0;
+  background-color: transparent;
+
+  > li .divider,
+  > .active {
+    color: @gray;
+  }
+}
+.breadcrumbs-horizontal {
+
+  > li {
+    display: inline-block;
+    .ie7-inline-block();
+
+    span:after {
+      color: @grayLight;
+      content: "/";
+      padding: 0 5px;
+    }
+  }
+  .last {
+    a {
+      color: @gray;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    span:after {
+      content: "";
+      padding: 0;
+    }
+  }
+}
+
+// Navigation
+// INVERTED COLORS
+// ---------------
+
+.nav-inverted > li > a {
+  color: @navInvertedLinkColor;
+
+  &:hover {
+    background: rgba(0,0,0,.16);
+  }
+  &:active {
+    color: @navInvertedLinkColorActive;
+  }
+}
+
+// Active state
+.nav-inverted.nav-pills > .active > a,
+.nav-inverted.nav-pills > .active > a:hover {
+  color: @linkColor;
+  background-color: @white;
+}
+
+
+// Nav Information
+.nav-information {
+  margin-top: (@gridGutterWidth*2);
+  padding: @gridGutterWidth 0 0;
+
+  .collapse {
+    border-bottom: 1px solid @navSecondaryhrBorder;
+
+    &.in {
+      border-top: 1px solid @navSecondaryhrBorder;
+    }
+  }
+  .nav.unstyled {
+    font-size: 12px;
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: @navSecondaryLink;
+
+      &:hover {
+        color: @navSecondaryLinkHover;
+        text-decoration: underline;
+      }
+    }
+  }
+  .nav-pills {
+    margin-bottom: 5px;
+
+    a {
+      color: @navSecondaryTitleColor;
+      font-family: @sansFontFamily;
+      font-size: 16px;
+
+      &:hover {
+        background: @white;
+      }
+    }
+  }
+  .title {
+    color: @navSecondaryTitleColor;
+    font: 16px @sansFontFamily;
+  }
+}
+
+
+// Navigation
+#nav {
+  font-size: 16px;
+
+  .nav > li > a {
+    font-weight: 700;
+  }
+}
+
+// Inverted navbar
+// -------------------------
+
+.navbar-inverse {
+
+  .navbar-inner {
+    #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
+    border-color: @navbarInverseBorder;
+  }
+
+  .brand,
+  .nav > li > a {
+    color: @navbarInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: @navbarInverseLinkColorHover;
+    }
+  }
+
+  .brand {
+    color: @navbarInverseBrandColor;
+  }
+
+  .navbar-text {
+    color: @navbarInverseText;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background-color: @navbarInverseLinkBackgroundHover;
+    color: @navbarInverseLinkColorHover;
+  }
+
+  .nav .active > a,
+  .nav .active > a:hover,
+  .nav .active > a:focus {
+    color: @navbarInverseLinkColorActive;
+    background-color: @navbarInverseLinkBackgroundActive;
+  }
+
+  // Inline text links
+  .navbar-link {
+    color: @navbarInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: @navbarInverseLinkColorHover;
+    }
+  }
+  
+  // Dropdowns
+  .nav li.dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle,
+  .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: @navbarInverseLinkBackgroundActive;
+    color: @navbarInverseLinkColorActive;
+  }
+  .nav li.dropdown > a:hover .caret,
+  .nav li.dropdown > a:focus .caret {
+    border-top-color: @navbarInverseLinkColorActive;
+    border-bottom-color: @navbarInverseLinkColorActive;
+  }
+  .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: @navbarInverseLinkColor;
+    border-bottom-color: @navbarInverseLinkColor;
+  }
+  .nav li.dropdown.open > .dropdown-toggle .caret,
+  .nav li.dropdown.active > .dropdown-toggle .caret,
+  .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-top-color: @navbarInverseLinkColorActive;
+    border-bottom-color: @navbarInverseLinkColorActive;
+  }
+}
+
+
+
+// TREEVIEW
+// ------------
+/* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
+.nav-treeview {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background: #F5F5F5;
+      padding: 2px 8px;
+    }
+  }
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+  input + label + ul li {
+    border-top: 1px dotted @grayLight;
+    padding-left: 22px;
+
+    &:hover {
+      background: @white;
+    }
+  }
+  input ~ ul {
+    display: none;
+  }
+  a,
+  label,
+  label:before {
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+  label,
+  label:before {
+    cursor: pointer;
+  }
+  label {
+    margin-top: 0;
+  }
+  label:before {
+    content: "\f0c1";
+    font-family: 'icomoon';
+    -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 2px;
+    margin-top: 5px;
+    speak: none;
+    vertical-align: middle;
+    width: 16px;
+  }  
+  label.branch:before {
+    content: "\f07b";
+    margin-right: 4px;
+    margin-top: 2px;
+  }
+  input:checked + label.branch:before {
+    content: "\f07c";
+  }
+  input:disabled + label {
+    cursor: default;
+    opacity: .6;
+  }
+  input:checked:not(:disabled) ~ ul {
+    display: block;
+  }
+}
+
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+  .nav-treeview {
+    -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+  }  
+  @-webkit-keyframes webkit-adjacent-element-selector-bugfix {
+
+    from { 
+      padding: 0;
+    } 
+    to { 
+      padding: 0;
+    }
+  }
+}
+
+
+
+// ARTICLE LIST
+// ------------
+.nav-articles {
+  margin-top: 20px;
+
+  > li {
+    font-size: 16px;
+
+    > a {
+      border-top: 1px solid #DDDFE0;
+      color: @gray;
+      padding: @baseLineHeight 15px;
+
+      &:hover {
+        color: @grayDark;
+      }
+    }
+  }
+}
+

@@ -1,24 +1,34 @@
-<header id="header" role="banner">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span span-brand clearfix">
-        <a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
-          <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-        </a>
-        #if ($show_site_name)
-          <span class="site-name" title="#language("go-to") $site_name">
-            $site_name
-          </span>
-        #end
-      </div>
-      <div class="span span-controls">
-        <div class="shopping-toggle">
-          <a class="toggle shopping-toggle-button" href="#" id="js-shopping-toggle"><span class="shopping-label">form <small>location</small></span><span class="icon-users" aria-hidden="true"></span><b class="caret"></b></a>
-        </div>
-        <div class="search-toggle">
-          <a id="js-search-toggle" class="toggle search-toggle-button"><span class="icon-search" aria-hidden="true"></span>&nbsp;&nbsp;Search</a>
-        </div>
-      </div>
+<!-- Header
+================================================== -->
+<nav class="wp-header clearfix" id="top" itemprop="WPHeader" role="banner">
+    <div class="container">
+        <ul class="nav visuallyhidden">
+            <li><a href="#hero">Skip to Content</a></li>
+            <li><a href="#nav">Skip to Navigation</a></li>
+            <li><a href="/medicare">Return to Homepage</a></li>
+        </ul>
+        <ul class="nav clearfix" itemscope itemtype="http://schema.org/Organization">
+            <li class="nav-brand">
+                <a class="brand logo-regence-cs" href="index.html">
+                    <span class="brand-logo"><span class="hide-text">Regence</span></span>
+                    <span class="brand-region">BlueCross BlueShield of Oregon</span>
+                </a>
+            </li>
+            <li class="nav-login">
+            #if (!$is_signed_in)
+                <a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+            #end
+            </li>
+            <li class="nav-shopping">
+                <a id="js-shopping-toggle" href="#" class="toggle shopping-toggle-button"><span class="shopping-label">Visitor <small>New Location</small></span><span aria-hidden="true" class="glyph-users hidden-phone"></span><b class="caret"></b></a>
+            </li>
+            <li class="nav-search">
+                <form class="form-search" action="http://www.regence.com/about/search.jsp" method="get" name="header-search" id="search" role="search">
+                    <label for="searchQuery" class="hide">Search</label>
+                    <input type="text" id="searchQuery" name="searchQuery" placeholder="Search" class="input-medium search-query">
+                    <button type="submit" class="btn btn-link"><span class="glyph-search" aria-hidden="true"></span><span class="visuallyhidden">Go</span></button>
+                </form>
+            </li>
+        </ul>
     </div>
-  </div>
-</header>
+</nav>

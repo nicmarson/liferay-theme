@@ -1,0 +1,207 @@
+/*------------------------------------*\
+    $CUSTOM
+    $CONTACT
+\*------------------------------------*/
+
+
+table.contact-info {
+  background: @wellBackground;
+  border-top: 1px solid darken(@wellBackground, 7%);
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  width: 100%;
+
+  a {
+    color: @textColor;
+    text-decoration: underline;
+
+    &:hover {
+      color: @linkColorHover;
+    }
+  }
+  small {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  td.icon-contact-info {
+    padding: 16px 8px 16px 10px;
+  }
+  td.contact-info-entry {
+    padding: 16px 8px 16px 5px;
+  }
+}
+
+
+// Contact Info Icons
+// ------------------
+.icon-contact-info {
+
+  .icon-phone,
+  .icon-email,
+  .icon-phone:before,
+  .icon-email:before {
+    .border-radius(8px);
+    color: @wellBackground;
+    display: block;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    z-index: 1;
+  }
+  .icon-phone,
+  .icon-email {
+    margin-left: 10px;
+    z-index: 1;
+  }
+  .icon-phone:before,
+  .icon-email:before {
+    z-index: 2;
+  }
+  .icon-phone,
+  .icon-phone:before {
+    background: @contactPhoneBackground;
+    .border-bottom-right-radius(0);
+  }
+  .icon-email,
+  .icon-email:before {
+    background: @contactEmailBackground;
+    .border-top-right-radius(0);
+  }
+}
+.generatedcontent .icon-contact-info {
+
+  .caret {
+    border-color: transparent;
+    border-top-width:   8px;
+    border-right-width: 8px;
+    border-left-width:  8px;
+    position: absolute;
+    right: -8px;
+  }
+  .caret:after {
+    background: @wellBackground;
+    .border-radius(8px);
+    content: "";
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: -16px;
+    width: 16px;
+    z-index: 3;
+  }
+  .icon-phone .caret {
+    border-bottom: 8px solid @contactPhoneBackground;
+    border-top: 0 solid transparent;
+    bottom: 0;
+  }
+  .icon-phone .caret:after {
+    bottom: -7px;
+  }
+  .icon-email .caret {
+    border-top-color: @contactEmailBackground;
+    top: 0;
+  }
+  .icon-email .caret:after {
+    top: -7px;
+  }
+}
+
+
+// Google Map
+// ------------------
+#map_container {
+  padding: 20px 0;
+}
+#map_sidebar, #map_canvas {
+  color: @black;
+  display: block;
+  font-family: @sansFontFamily;
+  font-size: 13px;
+  line-height: 18px;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#map_canvas {
+  height: 100%;
+  min-height: 450px;
+
+  p, ul, li {
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+}
+.pp-headline-address,
+.pp-headline-hours {
+  color: @gray;
+  margin-bottom: 1px;
+}
+.pp-place-title {
+  color: @linkColor;
+  display: inline;
+  font-size: 123%;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  margin-top: 2px;
+  padding-top: 3px;
+}
+.res {
+  border-collapse: collapse;
+
+  .popover {
+    border: none;
+    display: block;
+    float: left;
+    margin-left: 2px;
+    margin-top: 10px;
+    padding: 0;
+    position: relative;
+    width: 24px;
+
+    .arrow {
+      border-top-color: @brand;      
+      border-width: 10px 5px 2px;
+      left: 50%;
+      margin-left: -5px;
+
+      &:after {
+        border: none;
+        bottom: -1px;
+      }
+    }
+  }
+  .popover-content {
+    background: @brand;
+    color: @white;
+    cursor: pointer;
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 2px 2px;
+    text-align: center;
+    width: 20px;
+  }
+  .one {
+    clear: left;
+    padding: 0 12px 9px 0;
+  }
+  .highlightMarker {
+    background: @white;
+    cursor: pointer;
+
+    &:hover {
+      background: @accentLightest;
+    }
+  }
+  .vcard {
+    margin-left: 34px;
+    padding: 9px 0 0;
+  }
+}
+

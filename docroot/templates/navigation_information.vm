@@ -1,0 +1,51 @@
+<nav class="nav-information">
+    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#nav-information">More information</button> 
+    <div class="row-fluid collapse" id="nav-information">
+        <div class="span2x4">
+            <h3 class="title">Shop for Health Insurance</h3>
+            <ul class="nav unstyled">
+                <li><a href="#">Individual and families</a></li>
+                <li><a href="#">Through an employer</a></li>
+                <li><a href="#">For Medicare</a></li>
+            </ul>
+        </div>
+        <div class="span2x4">
+            <h3 class="title">Current Customers</h3>
+            <ul class="nav unstyled">
+                <li><a href="#">Individual and families</a></li>
+                <li><a href="#">Coverage through an employer</a></li>
+                <li><a href="#">Medicare eligible</a></li>
+                <li><a href="#">myRegence.com</a></li>
+            </ul>
+        </div>
+        <div class="span2x4">
+            <h3 class="title">Health &amp; Wellness</h3>
+            <ul class="nav unstyled">
+                <li><a href="#">Treatment Cost Estimates</a></li>
+                <li><a href="#">Prescription Information</a></li>
+                <li><a href="#">Health Insurance Guide</a></li>
+                <li><a href="#">Health &amp; Wellness News</a></li>
+            </ul>
+        </div>
+        <div class="span2x4">
+            <h3 class="title">About Regence</h3>
+            <ul class="nav unstyled">
+                <li><a href="#">Non-Profit Health Insurance</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </div>
+        <div class="span2x4">
+            <h3 class="title">About Regence</h3>
+            <ul class="nav unstyled">
+                <li><a href="#">Non-Profit Health Insurance</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

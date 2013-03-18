@@ -1,0 +1,98 @@
+/*------------------------------------*\
+    $CUSTOM
+    $ARTICLE
+\*------------------------------------*/
+
+.article {
+
+  .landing-content {
+    border: none;
+
+    .page-header {
+      margin: 0;
+      padding: @baseLineHeight;
+    }
+  }
+  .sidebar {
+    
+    h3 {
+      background: @asideHeadingBackground;
+      border-bottom: 1px solid @asideHeadingBorder;
+      border-top: 1px solid @asideHeadingBorder;
+      color: @asideHeadingColor;
+      font-size: 24px;
+      line-height: 28px;
+      padding: 8px 15px;
+    }
+    .content {
+      background: none;
+      border: none;
+      padding: 10px 15px;
+    }
+    .nav > li > a {
+      color: @textColor;
+
+      &:hover {
+        background: @white;
+        color: @linkColorHover;
+        text-decoration: underline;
+      }
+    }
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      background: none;
+      color: @linkColorHover;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+  }
+}
+
+// Left Sidebar
+.article-left-sidebar {
+
+  .sidebar {
+
+    .nav > li > a {
+      color: @grayLight;
+      font: 24px @sansFontFamilyLight;
+      line-height: 24px;
+      padding: 12px 15px;
+
+      &:hover {
+        color: @accent;
+        text-decoration: none;
+      }
+    }
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      color: @accent;
+    }
+  }  
+}
+
+
+// ARTICLE TYPES
+// ------------
+.story {
+
+  &.thumb {
+
+    a {
+      color: @gray;
+    }
+    .abstract {
+      font-size: 12px;
+    }
+    .image {
+      float: left;
+      margin-right: @baseLineHeight;
+    }
+    .story-headline {
+      color: @gray;
+      font-size: 18px;
+      line-height: 1;
+      margin-top: 0;
+    }
+  }
+}
+

@@ -1,0 +1,70 @@
+/*!
+ * Main - Custom Styles
+ *
+ * Author - Nic Marson
+ * Date - 1/22/2013
+ * Version - 1.0
+ *
+ * Designed and built to fix consistency issues with the Medicare site
+ */
+
+// Core variables and mixins
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins";
+@import "custom-typeplate";
+
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+
+/**
+ * CONTENTS............You’re reading it!
+ * ------------------- CUSTOM Components
+ * TYPE................Links, headings, lists, etc.
+ * UTILITIES...........Specific classes to override existing styles
+ * SPRITES.............Font icons
+ * NAV.................All custom navigation
+ * ARTICLE.............Sidebars and magazine layout
+ * TOP.................Short descriptive text
+ * BOTTOM..............Sounds like an appetizer
+ * HERO................Landing page components
+ * CONTACT.............Contact Us, Information, and Maps
+ * SHIM................Polyfill forms, datepicker, range, validation
+ * ------------------- CUSTOM Media Queries
+ */
+
+// Custom styles
+@import "custom-type";
+@import "custom-utilities";
+@import "custom-sprites";
+@import "custom-nav";
+@import "custom-article";
+@import "custom-top";
+@import "custom-bottom";
+@import "custom-hero";
+@import "custom-contact";
+@import "custom-shim";
+
+// Style Guide (non-essential)
+@import "docs";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "custom-1200px-min";
+
+// Desktops and larger
+@import "custom-980px-min";
+
+// Tablets to regular desktops
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+// Tablets and larger
+@import "custom-768px-min";
+
+// Phones to portrait tablets and narrow desktops
+@import "custom-767px-max";

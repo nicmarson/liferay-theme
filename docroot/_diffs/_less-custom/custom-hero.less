@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    $CUSTOM
+    $HERO
+\*------------------------------------*/
+
+
+.hero-unit {
+  .border-radius(0);
+  margin-bottom: 20px;
+  padding: 40px;
+
+  h1 {
+    color: @heroUnitHeadingColor;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  p {
+    color: @heroUnitLeadColor;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 26px;
+  }
+  .container {
+    position: relative;
+  }
+  .hero-inner {
+    padding: (@gridGutterWidth*2) @gridGutterWidth; // 40px 20px
+  }
+  .hero-inner-title {
+    font: @sansFontFamilyLight;
+    font-size: 36px;
+    line-height: 44px;
+
+    small {
+      display: block;
+      font: 18px @sansFontFamily;
+      text-transform: uppercase;
+    }
+  }
+}
+.landing .hero-unit {
+  margin-bottom: 0;
+}
+
+
+// Inverted hero unit
+.hero-inverted {
+  background-color: @brand;
+  color: @white;
+  padding: @gridGutterWidth 0; // 20px 0
+
+  a, h1 {
+    color: @white;
+  }
+  .hero-inner-title {
+    color: @white;
+
+    small {
+      color: @white;
+      font-family: @sansFontFamily;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<nav class="nav-utility">
+    <div class="row-fluid">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="#about">About Regence</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>

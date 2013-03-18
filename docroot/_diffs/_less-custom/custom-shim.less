@@ -1,0 +1,754 @@
+/*------------------------------------*\
+    $SHIM
+\*------------------------------------*/
+
+.flashblocker-assumed {
+  min-height: 20px;
+  min-width: 20px;
+}
+.cue-display {
+  position: absolute !important;
+  margin: 0;
+  padding: 0px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border: none !important;
+  background: none !important;
+  text-align: center;
+  visibility: hidden;
+  font-family: sans-serif;
+  font-size: 12px;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+.cue-display b {
+  font-weight: bold;
+}
+.cue-display i {
+  font-style: italic;
+}
+.cue-display u {
+  text-decoration: underline;
+}
+.cue-display span.cue-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 160%;
+  color: #fff;
+  visibility: visible !important;
+}
+.cue-display span.cue {
+  display: inline-block;
+  padding: 3px 5px;
+  background: #000;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+.cue-display .description-cues {
+  position: absolute;
+  top: -99px;
+  left: -99px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+mark {
+  background-color: #ff9;
+  color: #000; 
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $SHIM-RESET
+\*------------------------------------*/
+
+.input-range .ui-slider-range,
+.placeholder-box,
+.placeholder-text,
+.input-datetime-local,
+.step-controls,
+.step-controls span,
+.input-range,
+.input-range .ui-slider-handle,
+.input-range .ui-slider-range,
+.details-open-indicator {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: auto;
+  background: transparent none;
+}
+output {
+  position: relative;
+}
+.webshims-visual-hide {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+.webshims-visual-hide * {
+  visibility: hidden !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $PLACEHOLDER
+\*------------------------------------*/
+
+.placeholder-box {
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+}
+.polyfill-important .placeholder-box {
+  position: relative !important;
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+.placeholder-box-input {
+  vertical-align: bottom;
+}
+.placeholder-box-left {
+  float: left;
+}
+.placeholder-box-right {
+  float: right;
+}
+.placeholder-text {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #999;
+  line-height: 1;
+  cursor: text;
+}
+.polyfill-important .placeholder-text { 
+  margin: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  display: none !important;
+}
+.placeholder-box-input .placeholder-text {
+  white-space: nowrap;
+}
+.placeholder-visible {
+  color: #999;
+}
+.placeholder-visible .placeholder-text,
+.placeholder-text.placeholder-visible {
+  display: inline-block;
+}
+.placeholder-focused.placeholder-visible {
+  color: #ccc;
+}
+.polyfill-important .placeholder-visible .placeholder-text,
+.polyfill-important .placeholder-text.placeholder-visible {
+  display: inline-block !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $DATETIME-LOCAL
+\*------------------------------------*/
+
+.input-datetime-local {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+}
+.polyfill-important .input-datetime-local {
+  display: inline-block !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+.polyfill-important .input-datetime-local input {
+  display: inline !important;
+}
+.input-datetime-local-date {
+  margin: 0 2px 0 0;
+}
+.polyfill-important .input-datetime-local-date {
+  margin: 0 2px 0 0 !important;
+}
+.input-datetime-local-time {
+  margin: 0 0 0 2px;
+}
+.polyfill-important .input-datetime-local-time {
+  margin: 0 0 0 2px !important;
+}
+img.ui-datepicker-trigger {
+  display: inline;
+  display: inline-block;
+  width: 16px;
+}
+/* spinner control for time, number (usable for date, datetime-local) */
+.has-step-controls {
+  display: inline;
+}
+.polyfill-important .has-step-controls {
+  display: inline !important;
+}
+.step-controls {
+  position: relative;
+  zoom: 1;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+  vertical-align: top;
+  margin-left: -17px;
+  height: 19px;
+  width: 15px;
+}
+.polyfill-important .step-controls {
+  display: inline-block !important;
+  padding: 0 !important;
+  vertical-align: top !important;
+}
+.step-controls span {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 15px;
+  height: 9px;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  background: url(../images/forms/forms.png) no-repeat 0 0;
+}
+.polyfill-important .step-controls span {
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+}
+
+.step-controls span.step-up {
+  top: 0;
+  background-position: -80px 0;
+}
+.step-controls span.step-up:hover {
+  background-position: -105px 0;
+}
+.step-controls > span.mousepress-ui.step-up {
+  background-position: -105px -20px;
+}
+.step-controls span.step-down {
+  bottom: 0;
+  background-position: -155px 0;
+}
+.step-controls span.step-down:hover {
+  background-position: -180px 0;
+}
+.step-controls > span.mousepress-ui.step-down {
+  background-position: -180px -20px;
+}
+/* disabled or readonly */
+.step-controls.disabled-step-control span {
+  opacity: 0.95;
+  cursor: default;
+}
+.step-controls.disabled-step-control span.step-up {
+  background-position: -130px 0;
+}
+.step-controls.disabled-step-control span.step-down {
+  background-position: -205px 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $RANGE
+\*------------------------------------*/
+
+.input-range {
+  background: @grayLighter;
+  border: none;
+  .border-radius(3px);
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.15));
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  height: 9px;
+  line-height: 0;
+  margin: 5px 0;
+  position: relative;
+  vertical-align: middle;
+  width: 155px;
+  zoom: 1;
+}
+.polyfill-important .input-range {
+  display: inline-block !important;
+  font-size: 0 !important;
+  padding: 0 !important;
+}
+.input-range .ui-slider-handle {
+  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+  .border-radius(3px);
+  .box-shadow(inset 0 -9px 1px rgba(0,0,0,.05));
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 20px;
+  line-height: 0;
+  margin: -6px 0 0 -6px;
+  outline: none;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+  width: 12px;
+  z-index: 4;
+}
+/*.input-range .ui-slider-handle:hover,
+.input-range .ui-slider-handle:focus {
+  @handleHover: lighten(@orange, 30%);
+  .buttonBackground(@handleHover, spin(@handleHover, 20));
+}*/
+.input-range .ui-slider-handle.ui-state-active {
+  .box-shadow(inset 0 -9px 1px rgba(0,0,0,.1));
+}
+.input-range.ui-slider-disabled {
+  cursor: default;
+  opacity: 0.95;
+}
+.input-range.ui-slider-disabled .ui-slider-handle {
+  cursor: default;
+  background-position: -51px 0;
+}
+.input-range .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  background: #b6e2fb;
+}
+.input-range .input-range .ui-slider-range,
+.polyfill-important .input-range .ui-slider-handle {
+  position: absolute !important;
+  display: block !important;
+  padding: 0 !important;
+}
+.input-range.ui-slider-horizontal .ui-slider-range {
+  top: 4px;
+  height: 1px;
+}
+.input-range.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.input-range.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $DATEPICKER
+
+    Datepicker for Bootstrap
+  
+    Copyright 2012 Stefan Petre
+    Improvements by Andrew Rowls
+    Licensed under the Apache License v2.0
+    http://www.apache.org/licenses/LICENSE-2.0
+
+\*------------------------------------*/
+
+.input-date-datepicker-control {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  .border-radius(4px);
+  font-size: 14px;
+  left: 0;
+  margin-top: 1px;
+  padding: 8px;
+  overflow: visible;
+  top: 0;
+  zoom: 1;
+
+  &:before {
+    border-left:   7px solid transparent;
+    border-right:  7px solid transparent;
+    border-bottom: 7px solid #CCC;
+    border-bottom-color: rgba(0,0,0,.2);
+    content: '';
+    display: inline-block;
+    left: 6px;
+    position: absolute;
+    top: -7px;
+  }
+  &:after {
+    border-left:   6px solid transparent;
+    border-right:  6px solid transparent;
+    border-bottom: 6px solid @white;
+    content: '';
+    display: inline-block;
+    left: 7px;
+    position: absolute;
+    top: -6px;
+  }
+  table {
+    margin: 0;
+  }
+  td,
+  th {
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+    width: 24px;
+
+    a {
+      .border-radius(2px);
+    }
+  }
+  td {
+    a {
+      display: block;
+
+      &:hover {
+        background: @grayLighter;
+        color: @gray;
+        text-decoration: none;
+      }
+    }
+    &.ui-state-disabled a,
+    &.ui-state-disabled a:hover {
+      background: none;
+      color: @grayLight;
+      cursor: default;
+    }
+    &.ui-datepicker-today a,
+    &.ui-datepicker-today a:hover,
+    &.ui-datepicker-today.ui-state-disabled a,
+    &.ui-datepicker-today.ui-state-disabled a:hover {
+      background: lighten(@orange, 15%);
+      color: #FFF;
+    }
+    &.ui-datepicker-current-day a,
+    &.ui-datepicker-current-day a:hover,
+    &.ui-datepicker-current-day.ui-state-disabled a,
+    &.ui-datepicker-current-day.ui-state-disabled a:hover {
+      .buttonBackground(@btnPrimaryBackground, spin(@btnPrimaryBackground, 20));
+      color: #FFF;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    }
+    &.ui-datepicker-week-end a {
+
+      &:hover {
+        background:#CCC;
+        color: @grayDarker;
+      }
+    }
+  }
+  thead {
+    background: #F5F5F5;
+
+    span {
+      color: @grayDarker;
+      display: block;
+      font-family: @sansFontFamilyCondSemibold;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+  .ui-datepicker-header {
+    .border-radius(2px);
+    margin: 0 0 3px;
+    padding: 2px 0;
+    position: relative;
+
+    select {
+        border: 1px solid #333;
+        padding: 1px 2px 2px;
+    }
+    option {
+      padding-right: 8px;
+    }
+    .ui-icon {
+      border: 6px solid transparent;
+      content: '';
+      cursor: pointer;
+      display: block;
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 7px;
+      width: 0;
+    }
+    .ui-state-disabled .ui-icon {
+      cursor: default;
+    }
+    .ui-icon-circle-triangle-w {
+      border-right: 6px solid @blue;
+      left: 0;
+    }
+    .ui-state-hover .ui-icon-circle-triangle-w {
+      border-right-color: @gray;
+    }
+    .ui-icon-circle-triangle-e {
+      border-left: 6px solid @blue;
+      right: 0;
+    }
+    .ui-state-hover .ui-icon-circle-triangle-e {
+      border-left-color: @gray;
+    }
+  }
+  .ui-datepicker-title {
+    margin: 0 20px;
+    text-align: center;
+  }
+  .ui-datepicker-buttonpane {
+    margin: 4px 0 0;
+  }
+  .ui-datepicker-cover {
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+  }
+}
+.polyfill-important .input-date-datepicker-control {
+  z-index: 999999999 !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $DATALIST
+\*------------------------------------*/
+
+datalist {
+  display: none;
+}
+.datalist-polyfill {
+  position: absolute !important;
+  font-family: "Lucida Grande", "MS Shell Dlg", "Calibri", sans-serif;
+  font-size: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: none;
+  z-index: 999999999;
+}
+.datalist-polyfill.datalist-visible{
+  display: block;
+}
+.datalist-polyfill div {
+  margin: 0;
+  padding: 0;
+}
+.datalist-polyfill .datalist-box {
+  border: 1px solid #333;
+  max-height: 200px;
+  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: auto;
+}
+.datalist-polyfill ul,
+.datalist-polyfill li {
+  font-size: 100%;
+  list-style: none !important;
+}
+.datalist-polyfill ul {
+  position: static !important;
+  overflow: hidden;
+  margin: 0;
+  padding: 2px 0;
+  height:  auto !important;
+  background-color: #fff;
+  color: #000;
+  
+}
+.datalist-polyfill li {
+  margin: 1px 1px 1px 0;
+  padding: 2px 2px 2px 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+  zoom: 1;
+  overflow: hidden;
+}
+.datalist-polyfill .option-label {
+  display: inline-block;
+  float: left;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+.datalist-polyfill .option-value {
+  display: none;
+  float: right;
+  text-overflow: ellipsis;
+}
+.datalist-polyfill .hidden-item {
+  display: none !important;
+}
+.datalist-polyfill .active-item {
+  background-color: #39f;
+  color: #fff;
+  cursor: default;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $VALIDITY
+\*------------------------------------*/
+
+.validity-alert-wrapper {
+  font-size: 13px;
+  padding: 0 6px 6px 6px;
+  position: absolute !important;
+  overflow: hidden;
+  z-index: 1000000000;  
+}
+.validity-alert {
+  display: inline-block;
+  padding: 8px 0 0;
+
+  .va-arrow {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;  
+    border-bottom: 7px solid @red;
+    border-top: none;
+    display: block;
+    font-size: 0;
+    height: 0;
+    left: 20px;
+    position: absolute;
+    top: 1px;
+    width: 0;
+    zoom: 1;
+  }
+  .va-box {
+    background: @red;
+    .box-shadow(0 0 5px rgba(0,0,0,.5));
+    color: #FFF;
+    display: inline-block !important;
+    min-width: 60px;
+    padding: 8px 15px;
+    zoom: 1 !important;
+  }
+}
+html .validity-alert span.va-arrow,
+html .validity-alert .va-arrow .va-arrow-box{
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.polyfill-important .validity-alert span.va-arrow,
+.polyfill-important .validity-alert .va-arrow .va-arrow-box {
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+* html .validity-alert .va-arrow {
+  display: none;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $LOCAL-STORAGE
+\*------------------------------------*/
+
+#swflocalstorageshim-wrapper {
+  position: absolute; 
+  top: -999px; 
+  left: -9999px; 
+  overflow: hidden; 
+  width: 215px; 
+  min-width: 215px !important;
+  z-index: 2147483647;
+}
+#swflocalstorageshim-wrapper .polyfill-exceeded-message {
+  margin: 0 0 5px;
+  padding: 5px;
+  background: #ffd;
+  color: #000;
+  font-size: 13px;
+}
+#swflocalstorageshim-wrapper object {
+  min-height: 138px !important;
+  min-width: 215px !important;
+}
+details {
+  overflow: hidden;
+}
+summary {
+  position: relative;
+}
+.closed-details-child {
+  display: none !important;
+}
+
+.details-open-indicator {
+  margin: -1px 0 0;
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  background: url(../images/forms/details-arrows.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+.closed-details-summary .details-open-indicator {
+  background-position: 0 -20px;
+}
+.polyfill-important .details-open-indicator {
+  margin: -1px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 11px !important;
+  background: url(../images/forms/details-arrows.png) no-repeat 0 0 !important;
+  vertical-align: middle !important;
+}
+.polyfill-important .closed-details-summary .details-open-indicator {
+  background-position: 0 -20px !important;
+}
+summary.summary-has-focus {
+  outline: 1px dotted #aaa;
+  outline-offset: -1px;
+}
+

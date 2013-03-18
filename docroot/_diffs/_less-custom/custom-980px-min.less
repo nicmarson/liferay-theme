@@ -1,0 +1,63 @@
+//
+// Responsive: Desktop and up
+// --------------------------------------------------
+
+@media (min-width: 768px) {
+
+  // Header
+  // ------
+  #top {
+
+    .nav .nav-search {
+      width: auto;
+
+      form {
+        border-top: none;
+      }
+    }
+    .nav .nav-shopping {
+      clear: none;
+      float: right;
+      width: auto;
+
+      > a {
+        border-left: 1px solid @headerLinkBorder;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+
+  // Hero Units
+  // ----------
+  .hero-unit {
+    margin-bottom: 30px;
+    padding: 60px;
+
+    h1 {
+      font-size: 72px;
+    }
+    p {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  // Inverted hero unit
+  .hero-inverted {
+    padding: (@gridGutterWidth*2) 0; // 40px 0
+  }
+
+  // Hero with image background
+  .hero-image {
+    padding: 0; // redeclared for specificity
+  }
+
+  .hero-media {
+
+    .media {
+      margin-bottom: 20px;
+      min-height: 130px;
+    }
+  }
+}

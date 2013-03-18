@@ -1,4 +1,4 @@
-/*
+ /*
  * jQuery Anystretch
  * Version 1.1
  * https://github.com/danmillar/jquery-anystretch
@@ -11,4 +11,53 @@
  *
  * This is a fork of jQuery Backstretch (v1.2)
  * Copyright (c) 2011 Scott Robbin (srobbin.com)
-*/(function(e){e.fn.anystretch=function(t,n,r){var i=this.selector.length?!1:!0;return this.each(function(s){function g(){if(t){var n;i||u.css({position:f.elPosition,background:"none"});a.length==0?a=e("<div />").attr("class","anystretch").css({left:0,top:0,position:i?"fixed":"absolute",overflow:"hidden",zIndex:i?-999999:-999998,margin:0,padding:0,height:"100%",width:"100%"}):a.find("img").addClass("deleteable");n=e("<img />").css({position:"absolute",display:"none",margin:0,padding:0,border:"none",zIndex:-999999}).bind("load",function(t){var n=e(this),i,s;n.css({width:"auto",height:"auto"});i=this.width||e(t.target).width();s=this.height||e(t.target).height();c=i/s;y(function(){n.fadeIn(f.speed,function(){a.find(".deleteable").remove();typeof r=="function"&&r()})})}).appendTo(a);u.children(".anystretch").length==0&&(i?e("body").append(a):u.append(a));a.data("settings",f);n.attr("src",t);e(window).resize(y)}}function y(t){try{m={left:0,top:0};p=b();d=p/c;if(d>=w()){v=(d-w())/2;f.positionY=="center"||f.centeredY?e.extend(m,{top:"-"+v+"px"}):f.positionY=="bottom"&&e.extend(m,{top:"auto",bottom:"0px"})}else{d=w();p=d*c;v=(p-b())/2;f.positionX=="center"||f.centeredX?e.extend(m,{left:"-"+v+"px"}):f.positionX=="right"&&e.extend(m,{left:"auto",right:"0px"})}a.children("img:not(.deleteable)").width(p).height(d).filter("img").css(m)}catch(n){}typeof t=="function"&&t()}function b(){return i?u.width():u.innerWidth()}function w(){return i?u.height():u.innerHeight()}var o={positionX:"center",positionY:"center",speed:0,elPosition:"relative"},u=e(this),a=i?e(".anystretch"):u.children(".anystretch"),f=a.data("settings")||o,l=a.data("settings"),c,h,p,d,v,m;n&&typeof n=="object"&&e.extend(f,n);n&&typeof n=="function"&&(r=n);e(document).ready(g);return this})};e.anystretch=function(t,n,r){var i="onorientationchange"in window?e(document):e(window);i.anystretch(t,n,r)}})(jQuery);
+*/
+;(function($){$.fn.anystretch=function(src,options,callback){var isBody=this.selector.length?false:true;return this.each(function(i){var defaultSettings={positionX:'center',positionY:'center',speed:0,elPosition:'relative'},el=$(this),container=isBody?$('.anystretch'):el.children(".anystretch"),settings=container.data("settings")||defaultSettings,existingSettings=container.data('settings'),imgRatio,bgImg,bgWidth,bgHeight,bgOffset,bgCSS;if(options&&typeof options=="object")$.extend(settings,options);if(options&&typeof options=="function")callback=options;$(document).ready(_init);return this;function _init(){if(src){var img;if(!isBody){el.css({position:settings.elPosition,background:"none"})}if(container.length==0){container=$("<div />").attr("class","anystretch").css({left:0,top:0,position:(isBody?"fixed":"absolute"),overflow:"hidden",zIndex:(isBody?-999999:-999998),margin:0,padding:0,height:"100%",width:"100%"})}else{container.find("img").addClass("deleteable")}img=$("<img />").css({position:"absolute",display:"none",margin:0,padding:0,border:"none",zIndex:-999999}).bind("load",function(e){var self=$(this),imgWidth,imgHeight;self.css({width:"auto",height:"auto"});imgWidth=this.width||$(e.target).width();imgHeight=this.height||$(e.target).height();imgRatio=imgWidth/imgHeight;_adjustBG(function(){self.fadeIn(settings.speed,function(){container.find('.deleteable').remove();if(typeof callback=="function")callback()})})}).appendTo(container);if(el.children(".anystretch").length==0){if(isBody){$('body').append(container)}else{el.append(container)}}container.data("settings",settings);img.attr("src",src);$(window).resize(_adjustBG)}}function _adjustBG(fn){try{bgCSS={left:0,top:0};bgWidth=_width();bgHeight=bgWidth/imgRatio;if(bgHeight>=_height()){bgOffset=(bgHeight-_height())/2;if(settings.positionY=='center'||settings.centeredY){$.extend(bgCSS,{top:"-"+bgOffset+"px"})}else if(settings.positionY=='bottom'){$.extend(bgCSS,{top:"auto",bottom:"0px"})}}else{bgHeight=_height();bgWidth=bgHeight*imgRatio;bgOffset=(bgWidth-_width())/2;if(settings.positionX=='center'||settings.centeredX){$.extend(bgCSS,{left:"-"+bgOffset+"px"})}else if(settings.positionX=='right'){$.extend(bgCSS,{left:"auto",right:"0px"})}}container.children("img:not(.deleteable)").width(bgWidth).height(bgHeight).filter("img").css(bgCSS)}catch(err){}if(typeof fn=="function")fn()}function _width(){return isBody?el.width():el.innerWidth()}function _height(){return isBody?el.height():el.innerHeight()}})};$.anystretch=function(src,options,callback){var el=("onorientationchange"in window)?$(document):$(window);el.anystretch(src,options,callback)}})(jQuery);
+
+/*-------------------------------------------------------------------- 
+ * JQuery Plugin: "EqualHeights" & "EqualWidths"
+ * by:	Chris Coyier
+ *
+ * http://css-tricks.com/equal-height-blocks-in-rows/
+--------------------------------------------------------------------*/
+
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+
+ $('.blocks').each(function() {
+
+   $el = $(this);
+   topPostion = $el.position().top;
+   
+   if (currentRowStart != topPostion) {
+
+     // we just came to a new row.  Set all the heights on the completed row
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+
+     // set the variables for the new row
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+
+   } else {
+
+     // another div on the current row.  Add it to the list and check if it's taller
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+  }
+   
+  // do the last row
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+   
+ });
+
+ 
